@@ -1,0 +1,110 @@
+.loginContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.loginHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 100px;
+}
+.loginHead {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #ffffff;
+}
+
+.redirect{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #eaeaea;
+}
+
+.redirect p{
+    color: #eaeaea99;
+}
+
+.redirect a{
+    color: #eaeaea97;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 548.5px;
+    gap: 73px;
+   align-items: center;
+}
+
+
+.label{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+color: #ffffff88;
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none;
+    height: 10px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    font-size: 17px;
+    width: 548.5px;
+    color: #FFFFFF;
+}
+
+.input:focus{
+    height: 30px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+
+}
+
+
+
+.loginButton{
+    border: none;
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+color: #FFFFFF;
+text-decoration: underline;
+cursor: pointer;
+}
+
+.loginImage{
+    height: 750px;
+    overflow: hidden;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    object-fit: cover;
+}

@@ -1,0 +1,124 @@
+.footerSection {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border-top: 2px solid gray;
+  width: 90%;
+}
+
+.footerHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerH1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 67px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.footerInputbox {
+  box-sizing: border-box;
+  width: 447px;
+  height: 47px;
+  border: 1px solid #ffffff;
+}
+
+.footerInput {
+  box-sizing: border-box;
+  width: 380px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+.footerEnter {
+  border: none;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  color: white;
+  border-left: 2px solid white;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.footerNavContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding:50px 0 ;
+}
+
+.footerNav{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     color: white;
+}
+
+.footerNav li a{
+    color: white;
+    cursor: pointer;
+    
+}
+.footerNav li p{
+    color: white;
+    cursor: pointer;
+}
+
+.footerNav li a:hover{
+    color: rgba(255, 255, 255, 0.64);
+}
+.footerNav li p:hover{
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.footerCopyright{
+    border-top: 2px solid gray;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    padding: 10px 0;
+    align-items: center;
+    
+}
+
+
+.footerCopyright p:nth-child(1){
+font-family: 'Aref Ruqaa';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 31px;
+letter-spacing: -0.04em;
+color: #FFFFFF;
+}
+.footerCopyright p:nth-child(2){
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
