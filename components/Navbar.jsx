@@ -1,67 +1,25 @@
-import styled from "styled-components";
-import {BsHandbag} from "react-icons/bs"
+import { BsHandbag } from 'react-icons/bs';
 import Link from 'next/link';
-
-const NavContainer = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 100px 50px 100px;
-  position: relative;
-`;
-const NavLogo = styled.div`
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 31px;
-  letter-spacing: -0.04em;
-  color: #FFFFFF;
-`;
-const NavLink = styled.div`
-  display: flex;
-  gap: 50px;
-  `;
-const NavLinkP=styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: capitalize;
-  color: white;
-  `
-const NavExtra = styled.div`
-  display: flex;
-  gap: 20px;
-`;
-const NavExtraP = styled.div`
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    color: #fff;
-`;
-
 
 const Navbar = () => {
   return (
-    <NavContainer >
-        <NavLogo >
-          STYLE HAVEN
-        </NavLogo>
+    <nav className="navContainer">
+      <div className="navLogo">
+        <Link href="/">STYLE HAVEN</Link>
+      </div>
 
-        <NavLink >
-          <Link href="/store"><NavLinkP>Stores</NavLinkP></Link>
-          <Link href="/"><NavLinkP >Categories</NavLinkP></Link>
-          <Link href="/about_us"><NavLinkP>About us</NavLinkP></Link>
-        </NavLink>
+      <div className="navLink">
+        <Link href="/store" className="navLinkP">Stores</Link>
+        <Link href="/shopAll" className="navLinkP">Categories</Link>
+        <Link href="/about_us" className="navLinkP">About us</Link>
+      </div>
 
-        <NavExtra>
-          <NavExtraP ><BsHandbag/></NavExtraP>
-          <Link href="/login"><NavExtraP>Sign in</NavExtraP></Link>
-        </NavExtra>
-      </NavContainer>
-  )
-}
+      <div className="navExtra">
+        <div className="navExtraP"><BsHandbag /></div>
+        <Link href="/login" className="navExtraP">Sign in</Link>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

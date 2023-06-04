@@ -65,7 +65,7 @@ const Footer = () => {
           <div className={styles.footerCopyright}>
             <p>STYLE HAVEN</p>
 
-            <p>Copyright stylehaven 2023</p>
+            <p>Copyright © stylehaven 2023</p>
           </div>
         </div>
       </section>

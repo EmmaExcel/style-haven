@@ -47,8 +47,8 @@ const Unleash = () => {
               </div>
             </div>
 
-            <div className="">
-              <img src="" alt="" />
+            <div className={styles.unleashImgThree}>
+              <Image src="/unleash/three.png" alt="" width={508} height={730}/>
             </div>
           </div>
         </div>

@@ -1,0 +1,46 @@
+.shopAllSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.shopAllContainer {
+    height: 100%;
+    width: 90%;
+}
+
+.shopAllNavbar {
+    width: 20%;
+    padding-bottom: 50px;
+}
+
+.shopAllNavbar h1 {
+    width: 236px;
+    height: 68px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    color: #FFFFFF;
+}
+
+.shopAllNavbar p {
+    width: 106px;
+    height: 27px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 100px 10px;
+    overflow: hidden;
+}

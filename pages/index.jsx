@@ -8,6 +8,8 @@ import NewCollection from '@/components/HomeComponents/NewCollection'
 import Unleash from '@/components/HomeComponents/Unleash'
 import DiroHero from '@/components/HomeComponents/DiorHero'
 import Featured from '@/components/HomeComponents/Featured'
+import LookBook from '@/components/HomeComponents/LookBook'
+import OurBlog from '@/components/HomeComponents/OurBlog'
 
 
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
                 <Unleash/>
                 <DiroHero/>
                 <Featured/>
+                <LookBook/>
+                <OurBlog/>
             </div>
         </section>
     </> 
