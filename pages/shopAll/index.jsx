@@ -3,6 +3,64 @@ import React, { useState } from "react";
 import styles from "@/styles/shop.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useRecoilState } from "recoil";
+import { cartState } from "@/atoms/cartState";
+
+function ProductItem(props) {
+  const [cartItem, setCartItem] = useRecoilState(cartState);
+
+  const [changeAddtoCart,setChangeAddToCart]=useState(true);
+
+
+  const addItemToCart = () => {
+    if(cartItem.findIndex(pro => pro.id === props.product.id)===-1){
+      setCartItem((prevState) => [...prevState, props.product]);
+      setChangeAddToCart(false)
+    }else{
+     /*  setCartItem((prevState) => {
+        return prevState.filter((item) => item.id !== props.id);
+      }); */
+      setChangeAddToCart(true)
+    }  
+    
+  };
+
+  return (
+    <div className={`product ${props.product?.size} ${props.product?.style}`}>
+      {props.product.text && (
+        <div className="productText">
+          <p>{props.product.text}</p>
+        </div>
+      )}
+
+      {props.product.image && (
+        <Link
+          href={"/" + props.product.id}
+          className={`productImageContainer ${props.product?.size} ${props.product?.style}`}
+        >
+          <img
+            className={`productImage ${props.product?.size} ${props.product?.style}`}
+            src={props.product.image}
+            alt=""
+          />
+        </Link>
+      )}
+
+      <div className="productNameContainer">
+        <p>{props.product?.name}</p>
+        {props.product.price && (
+          <div className="productPriceContainer">
+            <p>Price: ${props.product?.price}</p>
+            { changeAddtoCart === true ?
+              <button onClick={addItemToCart}>Add to cart</button>
+              : <button onClick={addItemToCart}>Remove</button>
+            }
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 const ShopAll = () => {
   const menCategories = [
@@ -88,7 +146,7 @@ const ShopAll = () => {
     {
       id: 2,
       name: "Bracelets",
-     data: [
+      data: [
         {
           id: 21,
           name: "Bracelets 1",
@@ -439,7 +497,7 @@ const ShopAll = () => {
         {
           id: 81,
           name: "Trendy Brown  Coat",
-          Image: "/shopAll/Women/Coats/first.png",
+          image: "/shopAll/Women/Coats/first.png",
           price: 344,
           description: "Description for Coats 1",
           size: "small",
@@ -448,7 +506,7 @@ const ShopAll = () => {
         {
           id: 82,
           name: "Trendy Brown  Coat",
-          Image: "/shopAll/Women/Coats/second.png",
+          image: "/shopAll/Women/Coats/second.png",
           price: 344,
           description: "Description for Coats 2",
           size: "large",
@@ -457,7 +515,7 @@ const ShopAll = () => {
         {
           id: 83,
           name: "Grey Coat Matchings",
-          Image: "/shopAll/Women/Coats/third.png",
+          image: "/shopAll/Women/Coats/third.png",
           price: 677,
           description: "Description for Coats 2",
           size: "long",
@@ -468,7 +526,7 @@ const ShopAll = () => {
         {
           id: 84,
           name: "Trendy Grey Coat",
-          Image: "/shopAll/Women/Coats/fourth.png",
+          image: "/shopAll/Women/Coats/fourth.png",
           price: 374,
           description: "Description for Coats 2",
           size: "small",
@@ -477,7 +535,7 @@ const ShopAll = () => {
         {
           id: 85,
           name: "Trendy Brown  Coat",
-          Image: "/shopAll/Women/Coats/fifth.png",
+          image: "/shopAll/Women/Coats/fifth.png",
           price: 344,
           description: "Description for Coats 2",
           size: "long",
@@ -488,7 +546,7 @@ const ShopAll = () => {
         {
           id: 86,
           name: "Black BU Coat",
-          Image: "/shopAll/Women/Coats/sixth.png",
+          image: "/shopAll/Women/Coats/sixth.png",
           price: 123,
           description: "Description for Coats 2",
           size: "small",
@@ -497,7 +555,7 @@ const ShopAll = () => {
         {
           id: 87,
           name: "Red BU Coat",
-          Image: "/shopAll/Women/Coats/seventh.png",
+          image: "/shopAll/Women/Coats/seventh.png",
           price: 233,
           description: "Description for Coats 2",
           size: "small",
@@ -506,7 +564,7 @@ const ShopAll = () => {
         {
           id: 88,
           name: " Brown  Coat",
-          Image: "/shopAll/Women/Coats/eighth.png",
+          image: "/shopAll/Women/Coats/eighth.png",
           price: 555,
           description: "Description for Coats 2",
           size: "large",
@@ -683,39 +741,7 @@ const ShopAll = () => {
           {selectedCategoryData && (
             <div className={styles.productList}>
               {selectedCategoryData?.map((product) => (
-                <Link
-                href={"/" + product.id}
-                  key={product.id}
-                  className={`product ${product?.size} ${product?.style}`}
-                >
-                  {product.text && (
-                    <div className="productText">
-                      <p>{product.text}</p>
-                    </div>
-                  )}
-
-                  {product.Image && (
-                    <div
-                      className={`productImageContainer ${product?.size} ${product?.style}`}
-                    >
-                      <img
-                        className={`productImage ${product?.size} ${product?.style}`}
-                        src={product.Image}
-                        alt=""
-                      />
-                    </div>
-                  )}
-
-                  <div className="productNameContainer">
-                    <p>{product?.name}</p>
-                    {product.price && (
-                      <div className="productPriceContainer">
-                        <p>Price: ${product?.price}</p>
-                        <button>Add to cart</button>
-                      </div>
-                    )}
-                  </div>
-                </Link>
+                <ProductItem key={product.id} product={product}></ProductItem>
               ))}
             </div>
           )}

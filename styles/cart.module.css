@@ -1,0 +1,126 @@
+.cartSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cartContainer {
+    width: 90%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.cartHeader {
+    border-bottom: 1px solid white;
+}
+
+.cartHeader h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.CartListContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.cartProductContainer {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cartProduct {
+    display: flex;
+    gap: 36px;
+}
+
+.cartProductImageContainer {
+    width: 124px;
+    height: 182px;
+}
+
+.cartProductInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartProductInfo p:nth-child(1) {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+}
+
+.cartProductInfo p:nth-child(2) {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.cartProductInfo p:nth-child(3) {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.cartProductInfo p:nth-child(4) {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.cartProductRemoveContainer button {
+    border: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.CartEmpty {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.CartFooterContainer {
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PromoContainer {
+    border: 1px solid white;
+}

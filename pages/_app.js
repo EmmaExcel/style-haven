@@ -1,10 +1,17 @@
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
+import { RecoilRoot } from "recoil"
+import { Toaster } from 'react-hot-toast'
 
 export default function App({ Component, pageProps }) {
-  return(
-    <Layout>
-        <Component {...pageProps} />
-    </Layout>
-      ) 
+    return ( <
+        RecoilRoot >
+        <
+        Layout >
+        <
+        Component {...pageProps }
+        /> < /
+        Layout > <
+        /RecoilRoot>
+    )
 }
