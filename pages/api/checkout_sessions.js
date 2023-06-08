@@ -24,8 +24,8 @@ export default async function handler(req, res) {
             const session = await stripe.checkout.sessions.create({
                 line_items: transformedItems,
                 mode: 'payment',
-                success_url: `${req.headers.origin}/?success`,
-                cancel_url: `${req.headers.origin}/?canceled`,
+                success_url: `${req.headers.origin}/success`,
+                cancel_url: `${req.headers.origin}/canceled`,
             });
             res.json({ "sessionURL": session.url })
         } catch (err) {
