@@ -8,22 +8,25 @@ import { cartState } from "@/atoms/cartState";
 
 function ProductItem(props) {
   const [cartItem, setCartItem] = useRecoilState(cartState);
-
-  const [changeAddtoCart,setChangeAddToCart]=useState(true);
-
-
+  const [changeAddtoCart, setChangeAddToCart] = useState(true);
+  
   const addItemToCart = () => {
-    if(cartItem.findIndex(pro => pro.id === props.product.id)===-1){
+    if (cartItem.findIndex((pro) => pro.id === props.product.id) === -1) {
       setCartItem((prevState) => [...prevState, props.product]);
-      setChangeAddToCart(false)
-    }else{
-     /*  setCartItem((prevState) => {
+      setChangeAddToCart(false);
+    } else {
+      /*  setCartItem((prevState) => {
         return prevState.filter((item) => item.id !== props.id);
       }); */
-      setChangeAddToCart(true)
-    }  
+      setCartItem((prevState) => {
+        return prevState.filter((item) => item.id !== props.product.id);
+      });
     
+      setChangeAddToCart(true);
+    }
   };
+
+
 
   return (
     <div className={`product ${props.product?.size} ${props.product?.style}`}>
@@ -33,28 +36,28 @@ function ProductItem(props) {
         </div>
       )}
 
-      {props.product.image && (
+      {props.product?.image && (
         <Link
           href={"/" + props.product.id}
           className={`productImageContainer ${props.product?.size} ${props.product?.style}`}
         >
           <img
             className={`productImage ${props.product?.size} ${props.product?.style}`}
-            src={props.product.image}
-            alt=""
+            src={props.product?.image}
           />
         </Link>
       )}
 
-      <div className="productNameContainer">
+      <div className={`productNameContainer `}>
         <p>{props.product?.name}</p>
-        {props.product.price && (
+        {props.product?.price && (
           <div className="productPriceContainer">
             <p>Price: ${props.product?.price}</p>
-            { changeAddtoCart === true ?
+            {changeAddtoCart == true ? (
               <button onClick={addItemToCart}>Add to cart</button>
-              : <button onClick={addItemToCart}>Remove</button>
-            }
+            ) : (
+              <button onClick={addItemToCart}>Remove</button>
+            )}
           </div>
         )}
       </div>

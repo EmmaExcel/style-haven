@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRecoilState } from "recoil";
 import { cartState } from "@/atoms/cartState";
 import Link from "next/link";
+import axios from 'axios';
 
 function CartItem({data}) {
   const [cartItem, setCartItem] = useRecoilState(cartState);
@@ -31,7 +32,7 @@ function CartItem({data}) {
           <p>{name}</p>
           <p>${price}</p>
           <p>Size:s</p>
-          <p>QTY: {quantity}</p>
+          <p>QTY: 1{quantity}</p>
         </div>
       </div>
       <div className={styles.cartProductRemoveContainer}>
@@ -43,6 +44,21 @@ function CartItem({data}) {
 
 const Cart = () => {
   const [cartItem, setCartItem] = useRecoilState(cartState);
+  const totalPrice = cartItem.reduce(
+    (total, item) => total + item.price,
+    0
+  );
+
+  const createCheckoutSession=()=>{
+    axios.post('api/checkout_sessions',{cartItem})
+    .then(res => {
+      console.log(res)
+      window.location=res.data.sessionURL
+    })
+
+    .catch(err => console.log(err))
+
+  }
   
   return (
     <>
@@ -73,12 +89,12 @@ const Cart = () => {
                   <button>Use</button>
               </div>
 
-              <div className="">
-                <div className="">
-                Total <p>$999</p>
+              <div className={styles.CartTotalContainer}>
+                <div className={styles.CartTotal}>
+                Total <p>${totalPrice}</p>
                 </div>
 
-                <button>proceed</button>
+                <button onClick={createCheckoutSession}>Proceed</button>
 
               </div>
             </div>
