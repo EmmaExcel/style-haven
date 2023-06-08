@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import React from "react";
 import styles from "@/styles/cart.module.css";
 import Image from "next/image";
 import Link from "next/link";

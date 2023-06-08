@@ -288,3 +288,62 @@
 .SuccessImageContainer img {
     object-fit: contain;
 }
+
+.FailedSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FailedContainer {
+    width: 90%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FailedInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.FailedInfo p:nth-child(1) {
+    width: 456px;
+    height: 204px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.FailedInfo p:nth-child(2) {
+    width: 341px;
+    height: 22px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.FailedInfo a {
+    height: 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
