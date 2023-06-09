@@ -1,367 +1,553 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: #000000;
-    color: initial;
-    font-family: 'Manrope';
-    -ms-overflow-style: none;
-    color: white;
-}
-
-
-/* Hide the default scrollbar */
-
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-}
-
-
-/* Style the scrollbar track */
-
- ::-webkit-scrollbar-track {
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-
-/* Style the scrollbar thumb */
-
- ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: #cccccc27;
-    height: 5px;
-    /* Adjust the height as desired */
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -ms-transition: 0.7s;
-    -o-transition: 0.7s;
-}
-
-
-/* Style the scrollbar thumb when hovered */
-
- ::-webkit-scrollbar-thumb:hover {
-    background-color: white;
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -ms-transition: 0.7s;
-    -o-transition: 0.7s;
-}
-
-.navContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 100px 50px 100px;
-    position: relative;
-}
-
-.navLogo {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 31px;
-    letter-spacing: -0.04em;
-    color: #FFFFFF;
-}
-
-.navLogo a {
-    text-decoration: none;
-}
-
-.navLink {
-    display: flex;
-    gap: 50px;
-}
-
-.navLinkP {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: capitalize;
-    color: white;
-}
-
-.navExtra {
-    display: flex;
-    gap: 20px;
-}
-
-.navExtraP {
-    position: relative;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    color: #fff;
-}
-
-.navExtraP span {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 13px;
-    background-color: rgba(255, 255, 255, 0.847);
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: grid;
-    place-items: center;
-    color: black;
-}
-
-
-/* Add the styles for the BsHandbag icon if necessary */
-
-#handbag {
-    color: white;
-    font-size: x-large;
-}
-
-.bigImg {
-    width: 375px;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.category-item {
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.category-item.active {
-    border: 2px solid white;
-}
-
-.gender {
-    border-bottom: 2px solid #dadada;
-    height: 60px;
-    display: flex;
-    gap: 10px;
-}
-
-.gender button {
-    padding: 10px;
-    gap: 10px;
-    width: 113px;
-    height: 45px;
-    left: 180px;
-    top: 267px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height */
-    color: #FFFFFF;
-    border: none;
-}
-
-.gender button.active {
-    border: 2px solid white;
-}
-
-.product-list {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    justify-content: space-between;
-    border-bottom: 2px solid #dadada;
-}
-
-.product-list ul {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.product-list li {
-    padding: 10px;
-    gap: 10px;
-    width: 113px;
-    height: 45px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    border: none;
-    list-style: none;
-    display: grid;
-    place-items: center;
-}
-
-.product-list button {
-    border: none;
-    font-size: x-large;
-}
-
-.product {
-    text-decoration: none;
-}
-
-.product .small {
-    /* Styles for small-sized products */
-    height: 453px;
-    width: 290px;
-}
-
-.product .long {
-    /* Styles for small-sized products */
-    height: 450px;
-    width: 290px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product .large {
-    /* Styles for large-sized products */
-    height: 712px;
-    width: 454.48px;
-}
-
-.bold {
-    /* Styles for products with bold style */
-}
-
-.italic {
-    /* Styles for products with italic style */
-}
-
-.productText {
-    display: flex;
-    align-items: center;
-    height: 35%;
-}
-
-.productText p {
-    width: 355px;
-    height: 176px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-}
-
-.productImage .small {
-    width: 290px;
-    height: 425px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.productImage .long {
-    width: 290px;
-    height: 388px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.productImage .large {
-    width: 457px;
-    height: 685px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.productImageContainer .small {
-    width: 290px;
-    height: 425px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.productImageContainer .long {
-    width: 290px;
-    height: 388px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.productImageContainer .large {
-    width: 457px;
-    height: 685px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.productNameContainer {
-    padding: 10px 0;
-    width: 90%;
-}
-
-.productNameContainer p {
-    width: 200px;
-    height: 22px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.productPriceContainer {
-    display: flex;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    width: inherit;
-}
-
-.productPriceContainer p {
-    height: 22px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.productPriceContainer button {
-    height: 20px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    color: #FFFFFF;
-    border: none;
-    border-bottom: 1px solid white;
-    cursor: pointer;
-}
-
-.active {
-    border: 1px solid white;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #000000;
+        color: initial;
+        font-family: 'Manrope';
+        -ms-overflow-style: none;
+        color: white;
+    }
+    /* Hide the default scrollbar */
+    
+     ::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+    /* Style the scrollbar track */
+    
+     ::-webkit-scrollbar-track {
+        border-radius: 4px;
+        background-color: transparent;
+    }
+    /* Style the scrollbar thumb */
+    
+     ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #cccccc27;
+        height: 5px;
+        /* Adjust the height as desired */
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+    }
+    /* Style the scrollbar thumb when hovered */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background-color: white;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+    }
+    
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px 50px 100px;
+        position: relative;
+    }
+    
+    .navLogo {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+    }
+    
+    .navLogo a {
+        text-decoration: none;
+    }
+    
+    .navLink {
+        display: flex;
+        gap: 50px;
+    }
+    
+    .navLink a {
+        text-decoration: none;
+    }
+    
+    .navLinkP {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: white;
+    }
+    
+    .navExtra {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navExtraP {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .navExtraP span {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        font-size: 13px;
+        background-color: rgba(255, 255, 255, 0.847);
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: black;
+    }
+    /* Add the styles for the BsHandbag icon if necessary */
+    
+    #handbag {
+        color: white;
+        font-size: x-large;
+    }
+    
+    @media (max-width: 600px) {
+        /* CSS rules for screens up to 600 pixels wide */
+        .navMainMobile {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .navContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 30px 10px;
+            position: relative;
+        }
+        .navExtra {
+            display: flex;
+            gap: 20px;
+        }
+        .navExtraP {
+            text-decoration: none;
+        }
+        .navLogo {
+            width: 103px;
+            height: 23px;
+            font-family: 'Aref Ruqaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 23px;
+            letter-spacing: -0.04em;
+            color: #FFFFFF;
+        }
+        .navLogoMobile {
+            display: block;
+        }
+        .navLink {
+            display: none;
+        }
+        .navLinkMobile {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.332);
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            z-index: 10000000000;
+            transform: translateY(-500px);
+            -webkit-transform: translateY(-500px);
+            -moz-transform: translateY(-500px);
+            -ms-transform: translateY(-500px);
+            -o-transform: translateY(-500px);
+            transition: ease-in 0.7s;
+            -webkit-transition: ease-in 0.7s;
+            -moz-transition: ease-in 0.7s;
+            -ms-transition: ease-in 0.7s;
+            -o-transition: ease-in 0.7s;
+        }
+        .open {
+            transform: translateY(0px);
+            -webkit-transform: translateY(0px);
+            -moz-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            -o-transform: translateY(0px);
+            transition: ease-out 0.5s;
+            -webkit-transition: ease-out 0.5s;
+            -moz-transition: ease-out 0.5s;
+            -ms-transition: ease-out 0.5s;
+            -o-transition: ease-out 0.5s;
+        }
+        .navLinkMobile a {
+            border-bottom: 1px solid white;
+            text-decoration: none;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+    }
+    /* CSS rules for screens with a minimum width of 601 pixels */
+    
+    @media (min-width: 601px) {
+        /* CSS rules for screens starting from 601 pixels wide */
+        .navMainMobile {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .navContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 30px 10px;
+            position: relative;
+        }
+        .navExtra {
+            display: flex;
+            gap: 20px;
+        }
+        .navExtraP {
+            text-decoration: none;
+        }
+        .navLogo {
+            width: 103px;
+            height: 23px;
+            font-family: 'Aref Ruqaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 23px;
+            letter-spacing: -0.04em;
+            color: #FFFFFF;
+        }
+        .navLogoMobile {
+            display: block;
+        }
+        .navLink {
+            display: none;
+        }
+        .navLinkMobile {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.332);
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            z-index: 10000000000;
+            transform: translateY(-500px);
+            -webkit-transform: translateY(-500px);
+            -moz-transform: translateY(-500px);
+            -ms-transform: translateY(-500px);
+            -o-transform: translateY(-500px);
+            transition: ease-in 0.7s;
+            -webkit-transition: ease-in 0.7s;
+            -moz-transition: ease-in 0.7s;
+            -ms-transition: ease-in 0.7s;
+            -o-transition: ease-in 0.7s;
+        }
+        .open {
+            transform: translateY(0px);
+            -webkit-transform: translateY(0px);
+            -moz-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            -o-transform: translateY(0px);
+            transition: ease-out 0.5s;
+            -webkit-transition: ease-out 0.5s;
+            -moz-transition: ease-out 0.5s;
+            -ms-transition: ease-out 0.5s;
+            -o-transition: ease-out 0.5s;
+        }
+        .navLinkMobile a {
+            border-bottom: 1px solid white;
+            text-decoration: none;
+            height: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+    }
+    /* CSS rules for screens with a minimum width of 901 pixels and a maximum width of 1200 pixels */
+    
+    @media (min-width: 901px) and (max-width: 1200px) {
+        /* CSS rules for screens between 901 and 1200 pixels wide */
+        .navLogoMobile {
+            display: none;
+        }
+        .navLinkMobile {
+            display: none;
+        }
+        .navLink {
+            display: flex;
+        }
+    }
+    /* CSS rules for screens with a minimum width of 1201 pixels */
+    
+    @media (min-width: 1201px) {
+        /* CSS rules for screens starting from 1201 pixels wide */
+        .navLogoMobile {
+            display: none;
+        }
+        .navLinkMobile {
+            display: none;
+        }
+        .navLink {
+            display: flex;
+        }
+    }
+    
+    .bigImg {
+        width: 375px;
+        height: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .category-item {
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    
+    .category-item.active {
+        border: 2px solid white;
+    }
+    
+    .gender {
+        border-bottom: 2px solid #dadada;
+        height: 60px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .gender button {
+        padding: 10px;
+        gap: 10px;
+        width: 113px;
+        height: 45px;
+        left: 180px;
+        top: 267px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+        color: #FFFFFF;
+        border: none;
+    }
+    
+    .gender button.active {
+        border: 2px solid white;
+    }
+    
+    .product-list {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 2px solid #dadada;
+    }
+    
+    .product-list ul {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .product-list li {
+        padding: 10px;
+        gap: 10px;
+        width: 113px;
+        height: 45px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        border: none;
+        list-style: none;
+        display: grid;
+        place-items: center;
+    }
+    
+    .product-list button {
+        border: none;
+        font-size: x-large;
+    }
+    
+    .product {
+        text-decoration: none;
+    }
+    
+    .product .small {
+        /* Styles for small-sized products */
+        height: 453px;
+        width: 290px;
+    }
+    
+    .product .long {
+        /* Styles for small-sized products */
+        height: 450px;
+        width: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .product .large {
+        /* Styles for large-sized products */
+        height: 712px;
+        width: 454.48px;
+    }
+    
+    .bold {
+        /* Styles for products with bold style */
+    }
+    
+    .italic {
+        /* Styles for products with italic style */
+    }
+    
+    .productText {
+        display: flex;
+        align-items: center;
+        height: 35%;
+    }
+    
+    .productText p {
+        width: 355px;
+        height: 176px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+    
+    .productImage .small {
+        width: 290px;
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productImage .long {
+        width: 290px;
+        height: 388px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productImage .large {
+        width: 457px;
+        height: 685px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productImageContainer .small {
+        width: 290px;
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productImageContainer .long {
+        width: 290px;
+        height: 388px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+    .productImageContainer .large {
+        width: 457px;
+        height: 685px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .productNameContainer {
+        padding: 10px 0;
+        width: 90%;
+    }
+    
+    .productNameContainer p {
+        width: 200px;
+        height: 22px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    
+    .productPriceContainer {
+        display: flex;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        width: inherit;
+    }
+    
+    .productPriceContainer p {
+        height: 22px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    
+    .productPriceContainer button {
+        height: 20px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+        border: none;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+    }
+    
+    .active {
+        border: 1px solid white;
+    }

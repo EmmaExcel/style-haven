@@ -1,12 +1,17 @@
 import Image from "next/image";
-import styles from '@/styles/Home.module.css'
-
+import styles from "@/styles/Home.module.css";
 
 const HeroSection = () => {
   return (
     <section className={styles.HeroSection}>
       <div className={styles.HeroText}>
         <div className={styles.HeroTextContainer}>
+          <div className={styles.HeroMobileText}>
+            <p>
+              Step up your style game with the hottest fashion trends of the
+              season from STYLE HAVEN
+            </p>
+          </div>
           <div className={styles.HeroBigText}>
             <span>Elevate Your Style </span> <span>with Trend-Setting </span>{" "}
             <span>Fashion.</span>
@@ -31,12 +36,12 @@ const HeroSection = () => {
       </div>
 
       <div className={styles.HeroSectionCenterImage}>
-        <Image src="/Hero.png" alt="" width={592} height={739}/>
+        <img src="/Hero.png" alt="" />
       </div>
 
       <div className={styles.HeroSectionSideImageContainer}>
         <div className={styles.HeroSectionSideImage}>
-            <Image src="/sideHero.png" alt="" width={229} height={343}/>
+          <Image src="/sideHero.png" alt="" width={229} height={343} />
         </div>
         <p>
           Step up your style game with the hottest fashion trends of the season

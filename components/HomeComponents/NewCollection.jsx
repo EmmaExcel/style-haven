@@ -25,8 +25,9 @@ const NewCollection = () => {
           </div>
 
           <div className={styles.newCollectionSideText}>
-            Discover a Wide Selection of Chic and Trendy Outfits, Accessories,
-            and Shoes. Elevate Your Wardrobe Today!
+            <span>2023</span>
+           <p> Discover a Wide Selection of Chic and Trendy Outfits, Accessories,
+            and Shoes. Elevate Your Wardrobe Today!</p>
           </div>
         </div>
       </div>
