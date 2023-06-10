@@ -31,7 +31,7 @@ const Unleash = () => {
           <div className={styles.unleashMainSecond}>
             <div className={styles.unleashImgTwoContainer}>
               <div className={styles.unleashImgTwo}>
-                <Image src="/unleash/two.png" alt="" width={274} height={383} />
+                <img src="/unleash/two.png" alt="" />
                 <p>
                   Shop the latest styles, trends, and outfits for every occasion
                 </p>
@@ -40,7 +40,7 @@ const Unleash = () => {
               <div className={styles.unleashShopContainer}>
                 <div className={styles.unleashShop}>
                   <span>
-                    <BsArrowUpRight />
+                    <BsArrowUpRight className={styles.BsArrow}/>
                   </span>
                 </div>
                 <p>SHOP</p>
@@ -48,7 +48,7 @@ const Unleash = () => {
             </div>
 
             <div className={styles.unleashImgThree}>
-              <Image src="/unleash/three.png" alt="" width={508} height={730}/>
+              <img src="/unleash/three.png" alt="" />
             </div>
           </div>
         </div>
