@@ -7,22 +7,26 @@ const DiorHero = () => {
     <section className={styles.DiorSection}>
       <div className={styles.DiorContainer}>
         <div className={styles.DiorHeader}>
-          <div className={styles.DiorHeadOne}>
-            <p>Sponsored</p>
-            <h1>DIOR</h1>
-            <span>There is no beauty without happiness</span>
+          <div className={styles.diorexample}>
+            <div className={styles.DiorHeadOne}>
+              <p>Sponsored</p>
+              <h1>DIOR</h1>
+            </div>
+            <div className={styles.DiorHeadTwo}>
+              <h1>DIOR</h1>
+            </div>
           </div>
-          <div className={styles.DiorHeadTwo}>
-            <h1>DIOR</h1>
-          </div>
+
+          <span>There is no beauty without happiness</span>
         </div>
 
         <div className={styles.DiorMain}>
           <div className={styles.DiorMainOne}>
+
             <div className={styles.DiorShopContainer}>
-              <div className={styles.unleashShop}>
+              <div className={styles.DiorShop}>
                 <span>
-                  <BsArrowUpRight />
+                  <BsArrowUpRight className={styles.BsArrow}/>
                 </span>
               </div>
               <p>SHOP</p>
@@ -34,10 +38,13 @@ const DiorHero = () => {
                 help you stay ahead of the curve
               </p>
             </div>
+
+            
           </div>
 
-          <div className="">
-            <Image src="/dior.png" alt="" height={467} width={758} />
+          <div className={styles.DiorImage}>
+            <img  src="/dior.png" alt="" />
+            
           </div>
         </div>
       </div>

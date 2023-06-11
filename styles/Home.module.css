@@ -1,361 +1,1370 @@
-    .HomeSection {
+.HomeSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HomeContainer {
+    width: 90%;
+}
+
+
+/* HERO SECTION */
+
+.HeroSection {
+    height: 100vh;
+    display: flex;
+}
+
+.HeroText {
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+    gap: 20px;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.HeroTextContainer {
+    background-color: transparent;
+}
+
+.HeroBigText {
+    display: flex;
+    flex-direction: column;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 59px;
+    line-height: 81px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.HeroBigText span:nth-child(1) {
+    background-color: transparent;
+}
+
+.HeroBigText span:nth-child(2) {
+    padding-left: 35px;
+    background-color: transparent;
+}
+
+.HeroBigText span:nth-child(3) {
+    padding-left: 100px;
+    background-color: transparent;
+}
+
+.HeroSmallText {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.HeroSmallText p {
+    width: 212px;
+    height: 60px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.HeroSmallBottomText {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    background-color: transparent;
+}
+
+.HeroSmallBottomText p {
+    width: 227px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.HeroSectionCenterImage {
+    position: relative;
+    width: 595px;
+    height: 400px;
+}
+
+.HeroSectionCenterImage img {
+    position: absolute;
+    right: 70px;
+    width: 592px;
+    height: 739px;
+}
+
+.HeroSectionSideImageContainer {
+    width: 50%;
+    position: relative;
+}
+
+.HeroSectionSideImageContainer p {
+    z-index: 1000000;
+    width: 241px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    position: relative;
+    background-color: transparent;
+}
+
+.HeroSectionSideImage {
+    height: 345px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.HeroSectionSideImage img {
+    height: 345px;
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+}
+
+
+/* NEW COLLECTION SECTION */
+
+.newCollectionSection {
+    height: 100%;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.newCollectionContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 200px;
+    border-bottom: 1px solid white;
+}
+
+.newCollectionHeader {
+    display: flex;
+    gap: 240px;
+    align-items: center;
+}
+
+.newCollectionHeader span:nth-child(1) {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 96px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.newCollectionHeader span:nth-child(2) {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 168px;
+    line-height: 229px;
+    letter-spacing: -0.05em;
+    color: rgba(229, 229, 229, 0.09);
+}
+
+.newCollectionHeader span:nth-child(3) {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 96px;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.newCollectionMain {
+    display: flex;
+    justify-content: center;
+}
+
+.newCollectionSidebar {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background-color: transparent;
+}
+
+.newCollectionSidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: transparent;
+}
+
+.newCollectionSidebar ul li {
+    list-style: none;
+    background-color: transparent;
+}
+
+.newCollectionSidebar ul li a {
+    background-color: transparent;
+}
+
+.newCollectionCenter {
+    width: 1059px;
+    height: 471px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(".././public/newCollection.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.newCollectionCenter p {
+    width: 928px;
+    height: 51px;
+    background-color: transparent;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 51px;
+    /* identical to box height */
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.newCollectionSideText {
+    width: 203px;
+    height: 64px;
+    right: 70px;
+    top: 300px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    position: absolute;
+    background-color: transparent;
+}
+
+
+/* UNLEASH SECTION */
+
+.unleashSection {
+    height: 100%;
+    width: 100%;
+}
+
+.unleashContainer {
+    height: 90%;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 150px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.unleashTopText {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.unleashTopText p {
+    width: 379px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.unleashMain {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.unleashMainFirst {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.unleashTEXT {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 105px;
+    line-height: 143px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    z-index: 100000;
+    background-color: transparent;
+}
+
+.unleashTEXT span:nth-child(1) {
+    padding-left: 20px;
+}
+
+.unleashTEXT span:nth-child(2) {
+    padding-left: 170px;
+}
+
+.unleashTEXT span:nth-child(3) {
+    background-color: transparent;
+}
+
+.unleashMainSecond {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.unleashImgTwoContainer {
+    display: flex;
+    padding-left: 70px;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.unleashImgTwo {
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.unleashImgTwo p {
+    position: absolute;
+    width: 203px;
+    height: 32px;
+    bottom: 70px;
+    right: -155px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.unleashShopContainer p {
+    text-align: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.unleashShop {
+    height: 95px;
+    width: 95px;
+    border: 2px solid #fff;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 50px;
+}
+
+.unleashShop span {
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all 1.5s ease;
+    animation-fill-mode: forwards;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+}
+
+.unleashShop span:hover {
+    animation: arrow 1.5s alternate infinite;
+    -webkit-animation: arrow 1.5s alternate infinite;
+}
+
+@keyframes arrow {
+    from {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+        -moz-transform: translate(0px);
+        -ms-transform: translate(0px);
+        -o-transform: translate(0px);
+    }
+    to {
+        transform: translate(8px, -8px);
+        -webkit-transform: translate(8px, -8px);
+        -moz-transform: translate(8px, -8px);
+        -ms-transform: translate(8px, -8px);
+        -o-transform: translate(8px, -8px);
+    }
+}
+
+.unleashImgThree img {
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+/* DIOR SECTION */
+
+.DiorSection {
+    height: 100%;
+    width: 100%;
+}
+
+.DiorContainer {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-bottom: 2px solid #ffffff8f;
+    padding: 50px 0;
+}
+
+.DiorHeader {
+    display: flex;
+    align-items: start;
+    gap: 0px;
+    flex-direction: column;
+}
+
+.diorexample {
+    display: flex;
+    align-items: center;
+    gap: 270px;
+}
+
+.DiorHeadOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.DiorHeadOne p:nth-child(1) {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-left: 12px;
+}
+
+.DiorHeader span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding-left: 12px;
+}
+
+.DiorHeadOne h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 160px;
+    color: #FFFFFF;
+}
+
+.DiorHeadTwo h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 273px;
+    color: #FFFFFF;
+}
+
+.DiorMain {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.DiorMainOne {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 465px;
+    position: relative;
+}
+
+.DiorMainText p {
+    width: 248px;
+    height: 48px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.DiorMainText {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    right: -25px;
+}
+
+.DiorShopContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+.DiorShopContainer p {
+    text-align: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.DiorImage {
+    height: 467px;
+    width: 758px;
+}
+
+.DiorImage img {
+    height: 467px;
+    width: 758px;
+}
+
+
+/* FEATURE SECTION */
+
+.FeaturedSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FeaturedContainer {
+    height: 100%;
+    width: 90%;
+    padding-top: 20px;
+}
+
+.FeaturedHeader {
+    padding: 20px 0;
+}
+
+.FeaturedProductContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FeatureProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0;
+    gap: 40px;
+}
+
+.FeatureProduct {
+    border: 1px solid white;
+}
+
+
+/* #img { */
+
+
+/* width: 264px; */
+
+
+/* height: 420px; */
+
+
+/* border: 2px solid white; */
+
+
+/* } */
+
+
+/* #bigImg { */
+
+
+/* width: 375px; */
+
+
+/* height: 540px; */
+
+
+/* display: flex; */
+
+
+/* flex-direction: column; */
+
+
+/* align-items: center; */
+
+
+/* gap: 5px; */
+
+
+/* } */
+
+
+/* LookBook Section */
+
+.LookbookSection {
+    height: 100%;
+    width: 100%;
+}
+
+.LookbookContainer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding-bottom: 150px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.414);
+}
+
+.LookbookNavbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+}
+
+.LookbookLine {
+    width: 70%;
+    height: 2%;
+    border: 0.5px solid white;
+}
+
+.LookbookNavbarHeader {
+    width: 178px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+.LookbookMainOne {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.Lookbookone {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.LookFirstimgContainer {
+    height: 100%;
+    width: 65%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    padding-bottom: 20px;
+}
+
+.LookFirstimg {}
+
+.LookFirstTextContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+    align-items: center;
+    background-color: transparent;
+    justify-content: end;
+}
+
+.LookFirstTextContainer p {
+    width: 271px;
+    height: 112px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.LookFirstTextContainer button {
+    width: 150px;
+    height: 27px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.LookSecondTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.LookSecondTextContainer p {
+    width: 362px;
+    height: 64px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.LookbooktwoHeader {
+    padding: 50px 0px;
+}
+
+.LookbooktwoHeader h1 {
+    width: 400px;
+    height: 82px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 82px;
+    color: #FFFFFF;
+}
+
+.LookbooktwoHeader h1:nth-child(2) {
+    padding-left: 45px;
+}
+
+.YoumayProductContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.YoumayProduct {
+    position: relative;
+    height: 390px;
+    width: 480px;
+    display: grid;
+    place-content: center;
+}
+
+.LookbookshopContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0.8;
+    pointer-events: none;
+    transition: 0.7s ease;
+}
+
+.LookbookshopContainer p {
+    text-align: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.LookbookShop {
+    height: 95px;
+    width: 95px;
+    border: 2px solid #fff;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 50px;
+    background-color: transparent;
+}
+
+.LookbookShop span {
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all 1.5s ease;
+    animation-fill-mode: forwards;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    background-color: transparent;
+}
+
+.LookbookShop span:hover {
+    animation: arrow 1.5s alternate infinite;
+    -webkit-animation: arrow 1.5s alternate infinite;
+}
+
+@keyframes arrow {
+    from {
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+        -moz-transform: translate(0px);
+        -ms-transform: translate(0px);
+        -o-transform: translate(0px);
+    }
+    to {
+        transform: translate(8px, -8px);
+        -webkit-transform: translate(8px, -8px);
+        -moz-transform: translate(8px, -8px);
+        -ms-transform: translate(8px, -8px);
+        -o-transform: translate(8px, -8px);
+    }
+}
+
+
+/* OurBlog Section */
+
+.blogSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    height: 100%;
+    width: 90%;
+}
+
+.blogNavbar {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 50px;
+}
+
+.blogNavbar p {
+    width: 63px;
+    height: 22px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.blogBoxContainer {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.blogBox {
+    height: 366px;
+    width: 271px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogBoxImageContainer {
+    overflow: hidden;
+    width: 269px;
+    height: 209px;
+}
+
+.blogBoxImageContainer img {
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.blogBoxImageContainer img:hover {
+    transition: 0.7s ease;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+
+.blogBoxTextContainer {
+    display: flex;
+    height: 95px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+.blogBoxTextContainer p {
+    width: 223px;
+    height: 30px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.blogBoxTextContainer button {
+    border: none;
+    border-bottom: 1px solid white;
+    width: 36px;
+    height: 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.blogViewall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogViewall button {
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+
+/* CSS rules for screens with a maximum width of 600 pixels */
+
+@media (max-width: 600px) {
+    /* CSS rules for screens up to 600 pixels wide */
+    .HeroSection {
         height: 100%;
-        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
     }
-    
-    .HomeContainer {
-        width: 90%;
+    .HeroText {
+        width: 100%;
     }
-    /* HERO SECTION */
-    
-    .HeroSection {
-        height: 100vh;
+    .HeroTextContainer {
         display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 30px;
+        padding-bottom: 50px;
     }
-    
+    .HeroMobileText {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    .HeroMobileText p {
+        width: 241px;
+        height: 48px;
+    }
+    .HeroBigText {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 41px;
+        line-height: 56px;
+        /* identical to box height */
+        letter-spacing: -0.05em;
+        color: #FFFFFF;
+        width: 100%;
+    }
+    .HeroBigText span:nth-child(1) {
+        background-color: transparent;
+        width: 297px;
+        height: 56px;
+    }
+    .HeroBigText span:nth-child(2) {
+        padding-left: 35px;
+        background-color: transparent;
+        width: 319px;
+        height: 56px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 56px;
+        letter-spacing: -0.05em;
+        color: #FFFFFF;
+    }
+    .HeroBigText span:nth-child(3) {
+        padding-left: 80px;
+        background-color: transparent;
+        width: 143px;
+        height: 56px;
+        font-weight: 400;
+        font-size: 35px;
+    }
+    .HeroSmallText {
+        display: flex;
+        justify-content: start;
+        background-color: transparent;
+        padding-left: 15px;
+    }
+    .HeroSmallText p {
+        width: 212px;
+        height: 48px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    .HeroSmallBottomText {
+        display: none;
+    }
     .HeroText {
         display: flex;
         flex-direction: column;
-        height: 97%;
+        height: unset;
         gap: 20px;
         width: 100%;
         z-index: 1000;
         background-color: transparent;
     }
-    
-    .HeroTextContainer {
-        background-color: transparent;
-    }
-    
-    .HeroBigText {
-        display: flex;
-        flex-direction: column;
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 59px;
-        line-height: 81px;
-        letter-spacing: -0.05em;
-        color: #ffffff;
-        background-color: transparent;
-    }
-    
-    .HeroBigText span:nth-child(1) {
-        background-color: transparent;
-    }
-    
-    .HeroBigText span:nth-child(2) {
-        padding-left: 35px;
-        background-color: transparent;
-    }
-    
-    .HeroBigText span:nth-child(3) {
-        padding-left: 100px;
-        background-color: transparent;
-    }
-    
-    .HeroSmallText {
-        display: flex;
-        justify-content: center;
-        background-color: transparent;
-    }
-    
-    .HeroSmallText p {
-        width: 212px;
-        height: 60px;
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-        color: #ffffff;
-        background-color: transparent;
-    }
-    
-    .HeroSmallBottomText {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        height: 100%;
-        background-color: transparent;
-    }
-    
-    .HeroSmallBottomText p {
-        width: 227px;
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        color: #ffffff;
-        background-color: transparent;
-    }
-    
     .HeroSectionCenterImage {
         position: relative;
-        width: 595px;
-        height: 400px;
-    }
-    
-    .HeroSectionCenterImage img {
-        position: absolute;
-        right: 70px;
-        width: 592px;
-        height: 739px;
-    }
-    
-    .HeroSectionSideImageContainer {
-        width: 50%;
-        position: relative;
-    }
-    
-    .HeroSectionSideImageContainer p {
-        z-index: 1000000;
-        width: 241px;
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        color: #ffffff;
-        position: relative;
-        background-color: transparent;
-    }
-    
-    .HeroSectionSideImage {
-        height: 345px;
         width: 100%;
-        display: flex;
-        justify-content: center;
+        height: 383px;
     }
-    
-    .HeroSectionSideImage img {
-        height: 345px;
-        position: absolute;
-        top: 30px;
-        z-index: 1;
+    .HeroSectionCenterImage img {
+        position: unset;
+        width: 100%;
+        height: 383px;
     }
-    /* NEW COLLECTION SECTION */
-    
+    .HeroSectionSideImageContainer {
+        display: none;
+    }
+    /* NEW COLLECTION SECTION FOR MOBILE */
     .newCollectionSection {
         height: 100%;
-        padding-top: 200px;
+        padding-top: 100px;
         width: 100%;
+        position: relative;
     }
-    
     .newCollectionContainer {
         display: flex;
         flex-direction: column;
         position: relative;
-        padding-bottom: 200px;
+        padding-bottom: 50px;
         border-bottom: 1px solid white;
     }
-    
     .newCollectionHeader {
         display: flex;
-        gap: 240px;
-        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+        align-items: start;
     }
-    
     .newCollectionHeader span:nth-child(1) {
-        font-family: "Manrope";
+        font-family: 'Manrope';
         font-style: normal;
         font-weight: 500;
-        font-size: 70px;
-        line-height: 96px;
-        /* identical to box height */
+        font-size: 46px;
+        line-height: 63px;
         letter-spacing: -0.05em;
-        color: #ffffff;
+        color: #FFFFFF;
     }
-    
     .newCollectionHeader span:nth-child(2) {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 168px;
-        line-height: 229px;
-        letter-spacing: -0.05em;
-        color: rgba(229, 229, 229, 0.09);
+        display: none;
     }
-    
     .newCollectionHeader span:nth-child(3) {
-        font-family: "Manrope";
+        font-family: 'Manrope';
         font-style: normal;
         font-weight: 500;
-        font-size: 70px;
-        line-height: 96px;
+        font-size: 46px;
+        line-height: 63px;
         /* identical to box height */
         letter-spacing: -0.05em;
-        color: #ffffff;
+        color: #FFFFFF;
     }
-    
     .newCollectionMain {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
-    
     .newCollectionSidebar {
-        position: absolute;
-        top: 160px;
+        position: unset;
+        top: unset;
         left: 0;
         background-color: transparent;
+        padding-bottom: 80px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
     }
-    
     .newCollectionSidebar ul {
         display: flex;
         flex-direction: column;
         gap: 15px;
         background-color: transparent;
     }
-    
     .newCollectionSidebar ul li {
         list-style: none;
         background-color: transparent;
     }
-    
     .newCollectionSidebar ul li a {
         background-color: transparent;
     }
-    
     .newCollectionCenter {
-        width: 1059px;
+        width: 100%;
         height: 471px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(".././public/newCollection.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        align-items: center;
+        justify-content: baseline;
+        align-items: end;
+        padding-right: 10px;
+        object-fit: contain;
+        padding-bottom: 100px;
     }
-    
     .newCollectionCenter p {
-        width: 928px;
-        height: 51px;
-        background-color: transparent;
-        font-family: "Manrope";
+        width: 308px;
+        height: 54px;
+        left: 66px;
+        top: 321px;
+        font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
-        font-size: 37px;
-        line-height: 51px;
-        /* identical to box height */
+        font-size: 20px;
+        line-height: 27px;
         letter-spacing: -0.01em;
-        color: #ffffff;
-        margin-bottom: 20px;
+        color: #FFFFFF;
     }
-    
     .newCollectionSideText {
         width: 203px;
         height: 64px;
-        right: 70px;
-        top: 300px;
-        font-family: "Manrope";
+        left: 150px;
+        top: 70px;
+    }
+    .newCollectionSideText span {
+        display: block;
+        width: 220px;
+        height: 137px;
+        left: unset;
+        top: unset;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 137px;
+        letter-spacing: -0.05em;
+        color: rgba(229, 229, 229, 0.09);
+        background-color: transparent;
+    }
+    .newCollectionSideText p {
+        width: 203px;
+        height: 64px;
+        left: unset;
+        top: unset;
+        font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
-        color: #ffffff;
+        color: #FFFFFF;
         position: absolute;
         background-color: transparent;
     }
-    /* UNLEASH SECTION */
-    
+    /* UNLEASH FASHIONISTA SECTION */
     .unleashSection {
         height: 100%;
         width: 100%;
     }
-    
     .unleashContainer {
         height: 90%;
         width: 100%;
         border-bottom: 2px solid white;
-        padding-bottom: 150px;
+        padding-bottom: 75px;
         padding-top: 30px;
         position: relative;
     }
-    
     .unleashTopText {
         display: flex;
         justify-content: end;
         width: 100%;
+        padding: 50px 0;
     }
-    
     .unleashTopText p {
-        width: 379px;
-        font-family: "Manrope";
+        width: 337px;
+        height: 64px;
+        font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
         text-align: right;
-        color: #ffffff;
+        color: #FFFFFF;
     }
-    
     .unleashMain {
         display: flex;
         flex-direction: column;
-        gap: 85px;
+        gap: 50px;
     }
-    
     .unleashMainFirst {
         display: flex;
         align-items: center;
-        gap: 100px;
+        gap: 0px;
+        position: relative;
     }
-    
+    .unleashImgOne {
+        width: 212px;
+        height: 319px;
+    }
+    .unleashImgOne img {
+        width: 208px;
+        height: 293px;
+    }
     .unleashTEXT {
         display: flex;
         flex-direction: column;
         font-family: 'Manrope';
         font-style: normal;
-        font-weight: 400;
-        font-size: 105px;
-        line-height: 143px;
+        font-weight: 500;
+        font-size: 65px;
+        line-height: 89px;
         letter-spacing: -0.05em;
         color: #FFFFFF;
         z-index: 100000;
         background-color: transparent;
+        position: absolute;
+        top: 164px;
     }
-    
     .unleashTEXT span:nth-child(1) {
-        padding-left: 20px;
+        padding-left: 125px;
+        background-color: transparent;
     }
-    
     .unleashTEXT span:nth-child(2) {
-        padding-left: 170px;
+        padding-left: 65px;
+        height: 89px;
+        background-color: transparent;
     }
-    
     .unleashTEXT span:nth-child(3) {
         background-color: transparent;
     }
-    
     .unleashMainSecond {
         height: 100%;
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        flex-direction: column-reverse;
     }
-    
     .unleashImgTwoContainer {
         display: flex;
-        padding-left: 70px;
-        width: 45%;
+        padding-left: 0px;
+        width: 100%;
         justify-content: space-between;
     }
-    
     .unleashImgTwo {
         display: flex;
-        align-items: end;
+        align-items: unset;
         position: relative;
+        padding-top: 30px;
     }
-    
+    .unleashImgTwo img {
+        width: 124px;
+        height: 175px;
+    }
     .unleashImgTwo p {
         position: absolute;
-        width: 203px;
-        height: 32px;
-        bottom: 70px;
-        right: -155px;
+        top: 70px;
+        right: -115px;
+        width: 156px;
+        height: 48px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
@@ -364,21 +1373,22 @@
         color: #FFFFFF;
         background-color: transparent;
     }
-    
+    .unleashShopContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
     .unleashShopContainer p {
-        text-align: center;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 41px;
-        /* identical to box height */
-        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 27px;
+        background-color: transparent;
     }
-    
     .unleashShop {
-        height: 95px;
-        width: 95px;
+        height: 45px;
+        width: 45px;
         border: 2px solid #fff;
         display: grid;
         place-content: center;
@@ -389,7 +1399,10 @@
         -o-border-radius: 50%;
         font-size: 50px;
     }
-    
+    .BsArrow {
+        height: 25px;
+        background-color: transparent;
+    }
     .unleashShop span {
         background-color: transparent;
         display: grid;
@@ -402,12 +1415,10 @@
         -ms-transition: all 1.5s ease;
         -o-transition: all 1.5s ease;
     }
-    
     .unleashShop span:hover {
         animation: arrow 1.5s alternate infinite;
         -webkit-animation: arrow 1.5s alternate infinite;
     }
-    
     @keyframes arrow {
         from {
             transform: translate(0px);
@@ -424,93 +1435,96 @@
             -o-transform: translate(8px, -8px);
         }
     }
-    
+    .unleashImgThree {
+        width: 100%;
+        height: 569px;
+    }
     .unleashImgThree img {
-        position: absolute;
-        right: 70px;
-        bottom: 30px;
+        position: unset;
         z-index: 0;
         cursor: pointer;
+        width: 100%;
+        height: 569px;
     }
     /* DIOR SECTION */
-    
     .DiorSection {
         height: 100%;
         width: 100%;
     }
-    
     .DiorContainer {
         padding: 10px 0;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
         border-bottom: 2px solid #ffffff8f;
-        padding: 50px;
+        padding: 50px 0;
+        width: 100%;
     }
-    
     .DiorHeader {
         display: flex;
         align-items: center;
-        gap: 270px;
+        gap: 0px;
+        flex-direction: column;
     }
-    
+    .diorexample {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
     .DiorHeadOne {
         display: flex;
         flex-direction: column;
     }
-    
     .DiorHeadOne p:nth-child(1) {
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        color: #FFFFFF;
-        padding-left: 12px;
-    }
-    
-    .DiorHeadOne span {
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
         color: #FFFFFF;
-        padding-left: 12px;
     }
-    
+    .DiorHeader span {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        padding: 15px 0;
+    }
     .DiorHeadOne h1 {
         font-family: 'Manrope';
         font-style: normal;
-        font-weight: 400;
-        font-size: 200px;
-        line-height: 160px;
+        font-weight: 600;
+        font-size: 59px;
+        line-height: 81px;
+        /* identical to box height */
         color: #FFFFFF;
     }
-    
     .DiorHeadTwo h1 {
         font-family: 'Manrope';
         font-style: normal;
-        font-weight: 400;
-        font-size: 200px;
-        line-height: 273px;
+        font-weight: 600;
+        font-size: 59px;
+        line-height: 81px;
+        /* identical to box height */
         color: #FFFFFF;
     }
-    
     .DiorMain {
         display: flex;
         height: 100%;
+        width: 100%;
         align-items: center;
+        position: relative;
     }
-    
     .DiorMainOne {
         display: flex;
         align-items: center;
-        width: 400px;
+        width: 100%;
         height: 465px;
-        position: relative;
+        position: absolute;
+        background-color: transparent;
     }
-    
     .DiorMainText p {
         width: 248px;
         height: 48px;
@@ -522,116 +1536,132 @@
         color: #FFFFFF;
         background-color: transparent;
     }
-    
     .DiorMainText {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         width: 100%;
+        align-items: end;
         background-color: transparent;
         position: absolute;
-        right: -25px;
+        left: 0px;
+        right: unset;
+        bottom: 0px;
+        padding: 25px;
     }
-    
     .DiorShopContainer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         height: 100%;
+        position: absolute;
+        left: 40%;
+        background-color: transparent;
     }
-    
     .DiorShopContainer p {
-        text-align: center;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 41px;
-        /* identical to box height */
-        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 27px;
+        background-color: transparent;
     }
-    
+    .DiorShop {
+        height: 45px;
+        width: 45px;
+        border: 2px solid #fff;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-size: 50px;
+        background-color: transparent;
+    }
+    .DiorShop span {
+        background-color: transparent;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        transition: all 1.5s ease;
+        animation-fill-mode: forwards;
+        -webkit-transition: all 1.5s ease;
+        -moz-transition: all 1.5s ease;
+        -ms-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+    }
+    .DiorShop span:hover {
+        animation: arrow 1.5s alternate infinite;
+        -webkit-animation: arrow 1.5s alternate infinite;
+    }
+    @keyframes arrow {
+        from {
+            transform: translate(0px);
+            -webkit-transform: translate(0px);
+            -moz-transform: translate(0px);
+            -ms-transform: translate(0px);
+            -o-transform: translate(0px);
+        }
+        to {
+            transform: translate(8px, -8px);
+            -webkit-transform: translate(8px, -8px);
+            -moz-transform: translate(8px, -8px);
+            -ms-transform: translate(8px, -8px);
+            -o-transform: translate(8px, -8px);
+        }
+    }
+    .DiorImage {
+        width: 100%;
+        height: 467px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url("/dior.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .DiorImage img {
+        display: none;
+    }
+    /* FEATURE SECTION */
     .FeaturedSection {
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
+        width: 100%;
     }
-    
     .FeaturedContainer {
         height: 100%;
         width: 90%;
         padding-top: 20px;
     }
-    
     .FeaturedHeader {
         padding: 20px 0;
     }
-    
     .FeaturedProductContainer {
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: unset;
+        align-items: center;
+        justify-content: center;
     }
-    
     .FeatureProducts {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 20px 0;
+        gap: 40px;
     }
-    
     .FeatureProduct {
         border: 1px solid white;
     }
-    
-    .productPriceCon {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .ProductText {
-        text-align: center;
-    }
-    /* #img { */
-    /* width: 264px; */
-    /* height: 420px; */
-    /* border: 2px solid white; */
-    /* } */
-    /* #bigImg { */
-    /* width: 375px; */
-    /* height: 540px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* gap: 5px; */
-    /* } */
-    
-    .productPriceCon {
-        display: flex;
-        width: 80%;
-        padding: 10px 5px;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-    }
-    
-    .productPriceCon:last-child {
-        display: flex;
-        width: 70%;
-        padding: 10px 5px;
-    }
-    
-    .productAdd {
-        cursor: pointer;
-        text-transform: capitalize;
-    }
-    /* LookBook Section */
-    
+    /* LOOKBOOK SECTION */
     .LookbookSection {
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
-    
     .LookbookContainer {
         display: flex;
         height: 100%;
@@ -639,7 +1669,6 @@
         padding-bottom: 150px;
         border-bottom: 2px solid rgba(255, 255, 255, 0.414);
     }
-    
     .LookbookNavbar {
         display: flex;
         width: 100%;
@@ -647,13 +1676,11 @@
         gap: 80px;
         justify-content: center;
     }
-    
     .LookbookLine {
         width: 70%;
         height: 2%;
         border: 0.5px solid white;
     }
-    
     .LookbookNavbarHeader {
         width: 178px;
         font-family: 'Manrope';
@@ -664,14 +1691,12 @@
         letter-spacing: -0.04em;
         color: #FFFFFF;
     }
-    
     .LookbookMainOne {
         display: flex;
         justify-content: center;
         padding-top: 50px;
         padding-bottom: 70px;
     }
-    
     .Lookbookone {
         display: flex;
         align-items: center;
@@ -680,7 +1705,6 @@
         justify-content: center;
         background-color: transparent;
     }
-    
     .LookFirstimgContainer {
         height: 100%;
         width: 65%;
@@ -689,9 +1713,7 @@
         align-items: end;
         padding-bottom: 20px;
     }
-    
     .LookFirstimg {}
-    
     .LookFirstTextContainer {
         display: flex;
         flex-direction: column;
@@ -701,7 +1723,6 @@
         background-color: transparent;
         justify-content: end;
     }
-    
     .LookFirstTextContainer p {
         width: 271px;
         height: 112px;
@@ -713,7 +1734,6 @@
         color: #FFFFFF;
         background-color: transparent;
     }
-    
     .LookFirstTextContainer button {
         width: 150px;
         height: 27px;
@@ -727,7 +1747,6 @@
         border-bottom: 1px solid #fff;
         cursor: pointer;
     }
-    
     .LookSecondTextContainer {
         display: flex;
         flex-direction: column;
@@ -735,7 +1754,6 @@
         height: 100%;
         align-items: center;
     }
-    
     .LookSecondTextContainer p {
         width: 362px;
         height: 64px;
@@ -747,11 +1765,9 @@
         color: #FFFFFF;
         background-color: transparent;
     }
-    
     .LookbooktwoHeader {
         padding: 50px 0px;
     }
-    
     .LookbooktwoHeader h1 {
         width: 400px;
         height: 82px;
@@ -762,18 +1778,15 @@
         line-height: 82px;
         color: #FFFFFF;
     }
-    
     .LookbooktwoHeader h1:nth-child(2) {
         padding-left: 45px;
     }
-    
     .YoumayProductContainer {
         display: flex;
         justify-content: center;
         height: 100%;
         width: 100%;
     }
-    
     .YoumayProduct {
         position: relative;
         height: 390px;
@@ -781,7 +1794,6 @@
         display: grid;
         place-content: center;
     }
-    
     .LookbookshopContainer {
         position: absolute;
         top: 50%;
@@ -798,7 +1810,6 @@
         pointer-events: none;
         transition: 0.7s ease;
     }
-    
     .LookbookshopContainer p {
         text-align: center;
         font-family: 'Manrope';
@@ -809,7 +1820,6 @@
         color: #FFFFFF;
         background-color: transparent;
     }
-    
     .LookbookShop {
         height: 95px;
         width: 95px;
@@ -824,7 +1834,6 @@
         font-size: 50px;
         background-color: transparent;
     }
-    
     .LookbookShop span {
         display: grid;
         place-content: center;
@@ -837,12 +1846,10 @@
         -o-transition: all 1.5s ease;
         background-color: transparent;
     }
-    
     .LookbookShop span:hover {
         animation: arrow 1.5s alternate infinite;
         -webkit-animation: arrow 1.5s alternate infinite;
     }
-    
     @keyframes arrow {
         from {
             transform: translate(0px);
@@ -860,7 +1867,6 @@
         }
     }
     /* OurBlog Section */
-    
     .blogSection {
         height: 100%;
         width: 100%;
@@ -868,8 +1874,8 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
-    
     .blogContainer {
         display: flex;
         flex-direction: column;
@@ -877,13 +1883,11 @@
         height: 100%;
         width: 90%;
     }
-    
     .blogNavbar {
         display: flex;
         justify-content: start;
         padding-bottom: 50px;
     }
-    
     .blogNavbar p {
         width: 63px;
         height: 22px;
@@ -894,13 +1898,11 @@
         line-height: 22px;
         color: #FFFFFF;
     }
-    
     .blogBoxContainer {
         display: flex;
         align-items: center;
         gap: 200px;
     }
-    
     .blogBox {
         height: 366px;
         width: 271px;
@@ -908,18 +1910,15 @@
         display: flex;
         flex-direction: column;
     }
-    
     .blogBoxImageContainer {
         overflow: hidden;
         width: 269px;
         height: 209px;
     }
-    
     .blogBoxImageContainer img {
         transition: 0.7s ease;
         cursor: pointer;
     }
-    
     .blogBoxImageContainer img:hover {
         transition: 0.7s ease;
         transform: scale(1.1);
@@ -932,7 +1931,6 @@
         -ms-transition: 0.7s ease;
         -o-transition: 0.7s ease;
     }
-    
     .blogBoxTextContainer {
         display: flex;
         height: 95px;
@@ -940,7 +1938,6 @@
         border-bottom: 1px solid white;
         align-items: center;
     }
-    
     .blogBoxTextContainer p {
         width: 223px;
         height: 30px;
@@ -951,7 +1948,6 @@
         line-height: 20px;
         color: #FFFFFF;
     }
-    
     .blogBoxTextContainer button {
         border: none;
         border-bottom: 1px solid white;
@@ -965,500 +1961,69 @@
         color: #FFFFFF;
         cursor: pointer;
     }
-    
     .blogViewall {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
     .blogViewall button {
         border: none;
         border-bottom: 1px solid white;
         cursor: pointer;
     }
-    /* CSS rules for screens with a maximum width of 600 pixels */
-    
-    @media (max-width: 600px) {
-        /* CSS rules for screens up to 600 pixels wide */
-        .HeroSection {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding-bottom: 20px;
-        }
-        .HeroText {
-            width: 100%;
-        }
-        .HeroTextContainer {
-            display: flex;
-            flex-direction: column-reverse;
-            width: 100%;
-            gap: 30px;
-            padding-bottom: 50px;
-        }
-        .HeroMobileText {
-            display: flex;
-            justify-content: end;
-            width: 100%;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #FFFFFF;
-        }
-        .HeroMobileText p {
-            width: 241px;
-            height: 48px;
-        }
-        .HeroBigText {
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 41px;
-            line-height: 56px;
-            /* identical to box height */
-            letter-spacing: -0.05em;
-            color: #FFFFFF;
-            width: 100%;
-        }
-        .HeroBigText span:nth-child(1) {
-            background-color: transparent;
-            width: 297px;
-            height: 56px;
-        }
-        .HeroBigText span:nth-child(2) {
-            padding-left: 35px;
-            background-color: transparent;
-            width: 319px;
-            height: 56px;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 35px;
-            line-height: 56px;
-            letter-spacing: -0.05em;
-            color: #FFFFFF;
-        }
-        .HeroBigText span:nth-child(3) {
-            padding-left: 80px;
-            background-color: transparent;
-            width: 143px;
-            height: 56px;
-            font-weight: 400;
-            font-size: 35px;
-        }
-        .HeroSmallText {
-            display: flex;
-            justify-content: start;
-            background-color: transparent;
-            padding-left: 15px;
-        }
-        .HeroSmallText p {
-            width: 212px;
-            height: 48px;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #FFFFFF;
-        }
-        .HeroSmallBottomText {
-            display: none;
-        }
-        .HeroText {
-            display: flex;
-            flex-direction: column;
-            height: unset;
-            gap: 20px;
-            width: 100%;
-            z-index: 1000;
-            background-color: transparent;
-        }
-        .HeroSectionCenterImage {
-            position: relative;
-            width: 100%;
-            height: 383px;
-        }
-        .HeroSectionCenterImage img {
-            position: unset;
-            width: 100%;
-            height: 383px;
-        }
-        .HeroSectionSideImageContainer {
-            display: none;
-        }
-        /* NEW COLLECTION SECTION FOR MOBILE */
-        .newCollectionSection {
-            height: 100%;
-            padding-top: 100px;
-            width: 100%;
-            position: relative;
-        }
-        .newCollectionContainer {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            padding-bottom: 50px;
-            border-bottom: 1px solid white;
-        }
-        .newCollectionHeader {
-            display: flex;
-            gap: 0px;
-            flex-direction: column;
-            align-items: start;
-        }
-        .newCollectionHeader span:nth-child(1) {
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 46px;
-            line-height: 63px;
-            letter-spacing: -0.05em;
-            color: #FFFFFF;
-        }
-        .newCollectionHeader span:nth-child(2) {
-            display: none;
-        }
-        .newCollectionHeader span:nth-child(3) {
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 46px;
-            line-height: 63px;
-            /* identical to box height */
-            letter-spacing: -0.05em;
-            color: #FFFFFF;
-        }
-        .newCollectionMain {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .newCollectionSidebar {
-            position: unset;
-            top: unset;
-            left: 0;
-            background-color: transparent;
-            padding-bottom: 80px;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 20px;
-            color: #FFFFFF;
-        }
-        .newCollectionSidebar ul {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background-color: transparent;
-        }
-        .newCollectionSidebar ul li {
-            list-style: none;
-            background-color: transparent;
-        }
-        .newCollectionSidebar ul li a {
-            background-color: transparent;
-        }
-        .newCollectionCenter {
-            width: 100%;
-            height: 471px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(".././public/newCollection.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: baseline;
-            align-items: end;
-            padding-right: 10px;
-            object-fit: contain;
-            padding-bottom: 100px;
-        }
-        .newCollectionCenter p {
-            width: 308px;
-            height: 54px;
-            left: 66px;
-            top: 321px;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 27px;
-            letter-spacing: -0.01em;
-            color: #FFFFFF;
-        }
-        .newCollectionSideText {
-            width: 203px;
-            height: 64px;
-            left: 150px;
-            top: 70px;
-        }
-        .newCollectionSideText span {
-            display: block;
-            width: 220px;
-            height: 137px;
-            left: unset;
-            top: unset;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 100px;
-            line-height: 137px;
-            letter-spacing: -0.05em;
-            color: rgba(229, 229, 229, 0.09);
-            background-color: transparent;
-        }
-        .newCollectionSideText p {
-            width: 203px;
-            height: 64px;
-            left: unset;
-            top: unset;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #FFFFFF;
-            position: absolute;
-            background-color: transparent;
-        }
-        /* UNLEASH FASHIONISTA SECTION */
-        .unleashSection {
-            height: 100%;
-            width: 100%;
-        }
-        .unleashContainer {
-            height: 90%;
-            width: 100%;
-            border-bottom: 2px solid white;
-            padding-bottom: 75px;
-            padding-top: 30px;
-            position: relative;
-        }
-        .unleashTopText {
-            display: flex;
-            justify-content: end;
-            width: 100%;
-            padding: 50px 0;
-        }
-        .unleashTopText p {
-            width: 337px;
-            height: 64px;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: right;
-            color: #FFFFFF;
-        }
-        .unleashMain {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-        }
-        .unleashMainFirst {
-            display: flex;
-            align-items: center;
-            gap: 0px;
-            position: relative;
-        }
-        .unleashImgOne {
-            width: 212px;
-            height: 319px;
-        }
-        .unleashImgOne img {
-            width: 208px;
-            height: 293px;
-        }
-        .unleashTEXT {
-            display: flex;
-            flex-direction: column;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 65px;
-            line-height: 89px;
-            letter-spacing: -0.05em;
-            color: #FFFFFF;
-            z-index: 100000;
-            background-color: transparent;
-            position: absolute;
-            top: 164px;
-        }
-        .unleashTEXT span:nth-child(1) {
-            padding-left: 125px;
-            background-color: transparent;
-        }
-        .unleashTEXT span:nth-child(2) {
-            padding-left: 65px;
-            height: 89px;
-            background-color: transparent;
-        }
-        .unleashTEXT span:nth-child(3) {
-            background-color: transparent;
-        }
-        .unleashMainSecond {
-            height: 100%;
-            display: flex;
-            width: 100%;
-            flex-direction: column-reverse;
-        }
-        .unleashImgTwoContainer {
-            display: flex;
-            padding-left: 0px;
-            width: 100%;
-            justify-content: space-between;
-        }
-        .unleashImgTwo {
-            display: flex;
-            align-items: unset;
-            position: relative;
-            padding-top: 30px;
-        }
-        .unleashImgTwo img {
-            width: 124px;
-            height: 175px;
-        }
-        .unleashImgTwo p {
-            position: absolute;
-            top: 70px;
-            right: -115px;
-            width: 156px;
-            height: 48px;
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #FFFFFF;
-            background-color: transparent;
-        }
-        .unleashShopContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-        }
-        .unleashShopContainer p {
-            font-family: 'Manrope';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 27px;
-            background-color: transparent;
-        }
-        .unleashShop {
-            height: 45px;
-            width: 45px;
-            border: 2px solid #fff;
-            display: grid;
-            place-content: center;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            font-size: 50px;
-        }
-        .BsArrow {
-            height: 25px;
-            background-color: transparent;
-        }
-        .unleashShop span {
-            background-color: transparent;
-            display: grid;
-            place-content: center;
-            cursor: pointer;
-            transition: all 1.5s ease;
-            animation-fill-mode: forwards;
-            -webkit-transition: all 1.5s ease;
-            -moz-transition: all 1.5s ease;
-            -ms-transition: all 1.5s ease;
-            -o-transition: all 1.5s ease;
-        }
-        .unleashShop span:hover {
-            animation: arrow 1.5s alternate infinite;
-            -webkit-animation: arrow 1.5s alternate infinite;
-        }
-        @keyframes arrow {
-            from {
-                transform: translate(0px);
-                -webkit-transform: translate(0px);
-                -moz-transform: translate(0px);
-                -ms-transform: translate(0px);
-                -o-transform: translate(0px);
-            }
-            to {
-                transform: translate(8px, -8px);
-                -webkit-transform: translate(8px, -8px);
-                -moz-transform: translate(8px, -8px);
-                -ms-transform: translate(8px, -8px);
-                -o-transform: translate(8px, -8px);
-            }
-        }
-        .unleashImgThree {
-            width: 100%;
-            height: 569px;
-        }
-        .unleashImgThree img {
-            position: unset;
-            z-index: 0;
-            cursor: pointer;
-            width: 100%;
-            height: 569px;
-        }
+}
+
+
+/* CSS rules for screens with a minimum width of 601 pixels */
+
+@media (min-width: 601px) {
+    /* CSS rules for screens starting from 601 pixels wide */
+}
+
+
+/* CSS rules for screens with a minimum width of 901 pixels and a maximum width of 1200 pixels */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    /* CSS rules for screens between 901 and 1200 pixels wide */
+    .HeroMobileText {
+        display: none;
     }
-    /* CSS rules for screens with a minimum width of 601 pixels */
-    
-    @media (min-width: 601px) {
-        /* CSS rules for screens starting from 601 pixels wide */
+    .newCollectionSideText span {
+        display: none;
     }
-    /* CSS rules for screens with a minimum width of 901 pixels and a maximum width of 1200 pixels */
-    
-    @media (min-width: 901px) and (max-width: 1200px) {
-        /* CSS rules for screens between 901 and 1200 pixels wide */
-        .HeroMobileText {
-            display: none;
-        }
-        .newCollectionSideText span {
-            display: none;
-        }
-        .unleashImgTwo img {
-            width: 264px;
-            height: 371px;
-        }
-        .unleashImgThree img {
-            position: unset;
-            z-index: 0;
-            cursor: pointer;
-            width: 508px;
-            height: 730px;
-        }
+    .unleashImgTwo img {
+        width: 264px;
+        height: 371px;
     }
-    /* CSS rules for screens with a minimum width of 1201 pixels */
-    
-    @media (min-width: 1201px) {
-        /* CSS rules for screens starting from 1201 pixels wide */
-        .HeroMobileText {
-            display: none;
-        }
-        .newCollectionSideText span {
-            display: none;
-        }
-        .unleashImgTwo img {
-            width: 264px;
-            height: 371px;
-        }
-        .unleashImgThree img {
-            position: unset;
-            z-index: 0;
-            cursor: pointer;
-            width: 508px;
-            height: 730px;
-        }
+    .unleashImgThree img {
+        position: unset;
+        z-index: 0;
+        cursor: pointer;
+        width: 508px;
+        height: 730px;
     }
+}
+
+
+/* CSS rules for screens with a minimum width of 1201 pixels */
+
+@media (min-width: 1201px) {
+    /* CSS rules for screens starting from 1201 pixels wide */
+    .HeroMobileText {
+        display: none;
+    }
+    .newCollectionSideText span {
+        display: none;
+    }
+    .unleashImgTwo img {
+        width: 264px;
+        height: 371px;
+    }
+    .unleashImgThree img {
+        position: unset;
+        z-index: 0;
+        cursor: pointer;
+        width: 508px;
+        height: 730px;
+    }
+}
