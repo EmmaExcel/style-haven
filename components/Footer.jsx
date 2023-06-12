@@ -7,7 +7,7 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <div className={styles.footerHeader}>
             <h1 className={styles.footerH1}>Subscribe</h1>
-            <form action="">
+            <form action="" className={styles.footerFormContainer}>
               <div className={styles.footerInputbox}>
                 <input type="text" className={styles.footerInput}/>
                 <button className={styles.footerEnter}>Enter</button>

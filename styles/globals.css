@@ -226,12 +226,14 @@
         position: relative;
         height: 100%;
         width: 100%;
+        display: grid;
+        place-items: center;
     }
     .navContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 90%;
         padding: 30px 10px;
         position: relative;
     }
@@ -262,8 +264,7 @@
     .navLinkMobile {
         display: flex;
         flex-direction: column;
-        border: 1px solid rgba(255, 255, 255, 0.332);
-        width: 100%;
+        width: 90%;
         position: absolute;
         top: 100px;
         z-index: 10000000000;

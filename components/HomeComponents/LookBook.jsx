@@ -39,19 +39,18 @@ const LookBook = () => {
       <section className={styles.LookbookSection}>
         <div className={styles.LookbookContainer}>
           <div className={styles.LookbookNavbar}>
-            <div className={styles.LookbookLine}></div>
+            <div className={styles.LookbookLine}/>
             <h1 className={styles.LookbookNavbarHeader}>LookBook</h1>
-            <div className={styles.LookbookLine}></div>
+            <div className={styles.LookbookLine}/>
           </div>
 
           <div className={styles.LookbookMainOne}>
             <div className={styles.Lookbookone}>
               <div className={styles.LookFirstimgContainer}>
-                <Image
+                <img
                   className={styles.LookFirstimg}
                   src="/Lookbook/first.png"
-                  width={398}
-                  height={559}
+                  
                 />
                 <div className={styles.LookFirstTextContainer}>
                   <p>
@@ -75,11 +74,10 @@ const LookBook = () => {
                   occasion. Get ready to fall in love with fashion all over
                   again!
                 </p>
-                <Image
+                <img
                   src="/Lookbook/second.png"
                   alt=""
-                  width={269}
-                  height={404}
+                  className={styles.LookSecondimg}
                 />
               </div>
             </div>
@@ -89,12 +87,17 @@ const LookBook = () => {
             <div className={styles.LookbooktwoHeader}>
               <h1>YOU MAY</h1>
               <h1> ALSO LIKE</h1>
+
+              <div className={styles.LookbookMobileHeader}>
+                <marquee behavior="scroll" scrollamount="2" direction="left">YOU MAY ALSO LIKE</marquee>
+                <marquee behavior="scroll" scrollamount="2" direction="right">YOU MAY ALSO LIKE</marquee>
+              </div>
             </div>
 
             <div className={styles.YoumayProductContainer}>
               {data.map((product) => (
                 <div className={styles.YoumayProduct} key={product.id} onMouseOver={() => onHover(product.id)} onMouseOut={onMouseOut}>
-                  <Image  src={product.img} width={440} height={390} />
+                  <img className={styles.YoumayProductimg} src={product.img} />
 
                   
                     {shopId === product.id  &&    <div className={styles.LookbookshopContainer}>

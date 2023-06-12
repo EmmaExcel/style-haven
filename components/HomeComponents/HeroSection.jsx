@@ -13,7 +13,7 @@ const HeroSection = () => {
             </p>
           </div>
           <div className={styles.HeroBigText}>
-            <span>Elevate Your Style </span> <span>with Trend-Setting </span>{" "}
+            <span>Elevate Your Style </span> <span>With Trend-Setting </span>{" "}
             <span>Fashion.</span>
           </div>
 

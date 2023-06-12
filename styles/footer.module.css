@@ -1,124 +1,268 @@
 .footerSection {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  width: 100%;
-  color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    color: white;
 }
+
 .footerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  border-top: 2px solid gray;
-  width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-top: 2px solid gray;
+    width: 90%;
 }
 
 .footerHeader {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .footerH1 {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 49px;
-  line-height: 67px;
-  letter-spacing: -0.04em;
-  color: #ffffff;
-  padding: 15px 0;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 67px;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    padding: 15px 0;
 }
 
 .footerInputbox {
-  box-sizing: border-box;
-  width: 447px;
-  height: 47px;
-  border: 1px solid #ffffff;
+    box-sizing: border-box;
+    width: 447px;
+    height: 47px;
+    border: 1px solid #ffffff;
 }
 
 .footerInput {
-  box-sizing: border-box;
-  width: 380px;
-  height: 40px;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  padding-left: 10px;
-  color: white;
+    box-sizing: border-box;
+    width: 380px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
 }
 
 .footerEnter {
-  border: none;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: -0.04em;
-  color: white;
-  border-left: 2px solid white;
-  padding-left: 10px;
-  cursor: pointer;
+    border: none;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    color: white;
+    border-left: 2px solid white;
+    padding-left: 10px;
+    cursor: pointer;
 }
 
-.footerNavContainer{
+.footerNavContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
     list-style: none;
-    padding:50px 0 ;
+    padding: 50px 0;
 }
 
-.footerNav{
-     display: flex;
-     flex-direction: column;
-     gap: 10px;
-     color: white;
-}
-
-.footerNav li a{
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     color: white;
-    cursor: pointer;
-    
 }
-.footerNav li p{
+
+.footerNav li a {
     color: white;
     cursor: pointer;
 }
 
-.footerNav li a:hover{
-    color: rgba(255, 255, 255, 0.64);
+.footerNav li p {
+    color: white;
+    cursor: pointer;
 }
-.footerNav li p:hover{
+
+.footerNav li a:hover {
     color: rgba(255, 255, 255, 0.64);
 }
 
-.footerCopyright{
+.footerNav li p:hover {
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.footerCopyright {
     border-top: 2px solid gray;
     width: 100%;
     display: flex;
     gap: 100px;
     padding: 10px 0;
     align-items: center;
-    
 }
 
-
-.footerCopyright p:nth-child(1){
-font-family: 'Aref Ruqaa';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 31px;
-letter-spacing: -0.04em;
-color: #FFFFFF;
+.footerCopyright p:nth-child(1) {
+    font-family: 'Aref Ruqaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
 }
-.footerCopyright p:nth-child(2){
+
+.footerCopyright p:nth-child(2) {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+@media (max-width: 600px) {
+    /* CSS rules for screens up to 600 pixels wide */
+    .footerSection {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        color: white;
+    }
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        border-top: 2px solid gray;
+        width: 90%;
+    }
+    .footerHeader {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footerH1 {
+        width: 188px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 56px;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+    }
+    .footerFormContainer {
+        width: 100%;
+    }
+    .footerInputbox {
+        box-sizing: border-box;
+        width: 100%;
+        height: 47px;
+        border: 1px solid #ffffff;
+    }
+    .footerInput {
+        box-sizing: border-box;
+        width: 80%;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding-left: 10px;
+        color: white;
+    }
+    .footerEnter {
+        border: none;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        border-left: 2px solid white;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    .footerNavContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        list-style: none;
+        padding: 30px 0;
+        gap: 20px;
+    }
+    .footerNav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+        font-size: 15px;
+    }
+    .footerNav li a {
+        color: white;
+        cursor: pointer;
+    }
+    .footerNav li p {
+        color: white;
+        cursor: pointer;
+    }
+    .footerNav li a:hover {
+        color: rgba(255, 255, 255, 0.64);
+    }
+    .footerNav li p:hover {
+        color: rgba(255, 255, 255, 0.64);
+    }
+    .footerCopyright {
+        border-top: 2px solid gray;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        padding: 10px 0;
+        align-items: center;
+    }
+    .footerCopyright p:nth-child(1) {
+        width: 45%;
+        height: 31px;
+        font-family: 'Aref Ruqaa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 31px;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+    }
+    .footerCopyright p:nth-child(2) {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+
+/* CSS rules for screens with a minimum width of 601 pixels */
+
+@media (min-width: 601px) {
+    /* CSS rules for screens starting from 601 pixels wide */
+}
+
+
+/* CSS rules for screens with a minimum width of 901 pixels and a maximum width of 1200 pixels */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    /* CSS rules for screens between 901 and 1200 pixels wide */
+}
+
+
+/* CSS rules for screens with a minimum width of 1201 pixels */
+
+@media (min-width: 1201px) {
+    /* CSS rules for screens starting from 1201 pixels wide */
 }

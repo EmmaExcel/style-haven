@@ -720,7 +720,10 @@
     padding-bottom: 20px;
 }
 
-.LookFirstimg {}
+.LookFirstimg {
+    width: 398px;
+    height: 559px;
+}
 
 .LookFirstTextContainer {
     display: flex;
@@ -778,6 +781,11 @@
     background-color: transparent;
 }
 
+.LookSecondimg {
+    width: 269px;
+    height: 404px;
+}
+
 .LookbooktwoHeader {
     padding: 50px 0px;
 }
@@ -810,6 +818,11 @@
     width: 480px;
     display: grid;
     place-content: center;
+}
+
+.YoumayProductimg {
+    width: 440px;
+    height: 390px;
 }
 
 .LookbookshopContainer {
@@ -948,6 +961,8 @@
 }
 
 .blogBoxImageContainer img {
+    width: 269px;
+    height: 209px;
     transition: 0.7s ease;
     cursor: pointer;
 }
@@ -1062,6 +1077,7 @@
         background-color: transparent;
         width: 297px;
         height: 56px;
+        font-size: 35px;
     }
     .HeroBigText span:nth-child(2) {
         padding-left: 35px;
@@ -1071,7 +1087,7 @@
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 56px;
         letter-spacing: -0.05em;
         color: #FFFFFF;
@@ -1082,7 +1098,7 @@
         width: 143px;
         height: 56px;
         font-weight: 400;
-        font-size: 35px;
+        font-size: 30px;
     }
     .HeroSmallText {
         display: flex;
@@ -1229,7 +1245,7 @@
     .newCollectionSideText {
         width: 203px;
         height: 64px;
-        left: 150px;
+        left: 120px;
         top: 70px;
     }
     .newCollectionSideText span {
@@ -1660,7 +1676,6 @@
     .LookbookSection {
         height: 100%;
         width: 100%;
-        overflow: hidden;
     }
     .LookbookContainer {
         display: flex;
@@ -1673,7 +1688,7 @@
         display: flex;
         width: 100%;
         align-items: center;
-        gap: 80px;
+        gap: 50px;
         justify-content: center;
     }
     .LookbookLine {
@@ -1682,70 +1697,50 @@
         border: 0.5px solid white;
     }
     .LookbookNavbarHeader {
-        width: 178px;
+        width: 89px;
+        height: 27px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 20px;
+        line-height: 27px;
         letter-spacing: -0.04em;
         color: #FFFFFF;
     }
     .LookbookMainOne {
         display: flex;
-        justify-content: center;
+        justify-content: unset;
         padding-top: 50px;
         padding-bottom: 70px;
+        height: 100%;
+        position: relative;
     }
     .Lookbookone {
         display: flex;
         align-items: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         justify-content: center;
         background-color: transparent;
+        flex-direction: column;
     }
     .LookFirstimgContainer {
         height: 100%;
         width: 65%;
         position: relative;
         display: flex;
-        align-items: end;
+        align-items: center;
         padding-bottom: 20px;
     }
-    .LookFirstimg {}
+    .LookFirstimg {
+        width: 196.36px;
+        height: 275.8px;
+    }
     .LookFirstTextContainer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        gap: 50px;
-        align-items: center;
-        background-color: transparent;
-        justify-content: end;
+        display: none;
     }
-    .LookFirstTextContainer p {
-        width: 271px;
-        height: 112px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        color: #FFFFFF;
-        background-color: transparent;
-    }
-    .LookFirstTextContainer button {
-        width: 150px;
-        height: 27px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 27px;
-        color: #FFFFFF;
-        border: none;
-        border-bottom: 1px solid #fff;
-        cursor: pointer;
+    .Lookbooktwo {
+        width: 100%;
     }
     .LookSecondTextContainer {
         display: flex;
@@ -1755,8 +1750,8 @@
         align-items: center;
     }
     .LookSecondTextContainer p {
-        width: 362px;
-        height: 64px;
+        width: 228px;
+        height: 96px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
@@ -1764,9 +1759,17 @@
         line-height: 16px;
         color: #FFFFFF;
         background-color: transparent;
+        position: absolute;
+        left: 110px;
+        top: 290px;
+    }
+    .LookSecondimg {
+        width: 167.17px;
+        height: 251.07px;
     }
     .LookbooktwoHeader {
         padding: 50px 0px;
+        width: 100%;
     }
     .LookbooktwoHeader h1 {
         width: 400px;
@@ -1777,22 +1780,39 @@
         font-size: 60px;
         line-height: 82px;
         color: #FFFFFF;
+        display: none;
     }
     .LookbooktwoHeader h1:nth-child(2) {
         padding-left: 45px;
     }
+    .LookbookMobileHeader {
+        width: 100%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 59px;
+        line-height: 81px;
+        color: #FFFFFF;
+    }
     .YoumayProductContainer {
         display: flex;
-        justify-content: center;
+        justify-content: unset;
         height: 100%;
         width: 100%;
+        flex-direction: column;
+        gap: 0px;
     }
     .YoumayProduct {
         position: relative;
         height: 390px;
-        width: 480px;
+        width: 100%;
         display: grid;
-        place-content: center;
+        place-content: unset;
+        gap: unset;
+    }
+    .YoumayProductimg {
+        width: 100%;
+        height: 379.73px;
     }
     .LookbookshopContainer {
         position: absolute;
@@ -1874,7 +1894,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
     }
     .blogContainer {
         display: flex;
@@ -1901,10 +1920,18 @@
     .blogBoxContainer {
         display: flex;
         align-items: center;
-        gap: 200px;
+        gap: 20px;
+        width: 100%;
+        overflow: scroll;
+    }
+    .blogBoxContainer::-webkit-scrollbar {
+        width: 3px;
+        background-color: transparent;
+        color: transparent;
+        display: none;
     }
     .blogBox {
-        height: 366px;
+        height: 100%;
         width: 271px;
         gap: 10px;
         display: flex;
@@ -1916,6 +1943,8 @@
         height: 209px;
     }
     .blogBoxImageContainer img {
+        width: 100%;
+        height: 209px;
         transition: 0.7s ease;
         cursor: pointer;
     }
@@ -1933,20 +1962,21 @@
     }
     .blogBoxTextContainer {
         display: flex;
-        height: 95px;
+        height: 100%;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         align-items: center;
     }
     .blogBoxTextContainer p {
         width: 223px;
-        height: 30px;
+        height: 100%;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 600;
         font-size: 15px;
         line-height: 20px;
         color: #FFFFFF;
+        padding: 10px 0;
     }
     .blogBoxTextContainer button {
         border: none;
@@ -1965,6 +1995,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 40px 0;
     }
     .blogViewall button {
         border: none;
@@ -2002,6 +2033,9 @@
         width: 508px;
         height: 730px;
     }
+    .LookbookMobileHeader {
+        display: none;
+    }
 }
 
 
@@ -2025,5 +2059,8 @@
         cursor: pointer;
         width: 508px;
         height: 730px;
+    }
+    .LookbookMobileHeader {
+        display: none;
     }
 }

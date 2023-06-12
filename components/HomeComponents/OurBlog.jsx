@@ -34,7 +34,7 @@ const OurBlog = () => {
          { data.map((blog)=>(
             <div className={styles.blogBox}>
             <div className={styles.blogBoxImageContainer}>
-              <Image src={blog.img} width={269} height={209} />
+              <img src={blog.img} />
             </div>
             <div className={styles.blogBoxTextContainer}>
               <p>{blog.title}</p>
