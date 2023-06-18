@@ -44,3 +44,93 @@
     padding: 100px 10px;
     overflow: hidden;
 }
+
+
+/* CSS rules for screens with a maximum width of 600 pixels */
+
+@media (max-width: 600px) {
+    /* CSS rules for screens up to 600 pixels wide */
+    .shopAllSection {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .shopAllContainer {
+        height: 100%;
+        width: 90%;
+    }
+    .shopAllNavbar {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .shopAllNavbar h1 {
+        width: 100%;
+        height: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 34px;
+        color: #FFFFFF;
+        text-align: center;
+        background-color: transparent;
+    }
+    .shopAllNavbar p {
+        height: 100%;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 40px 0 0px 0px;
+        place-items: center;
+    }
+}
+
+
+/* CSS rules for screens with a minimum width of 601 pixels */
+
+@media (min-width: 601px) {
+    /* CSS rules for screens starting from 601 pixels wide */
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 50px 5px;
+        place-items: center;
+    }
+}
+
+
+/* CSS rules for screens with a minimum width of 901 pixels and a maximum width of 1200 pixels */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 100px 10px;
+        overflow: hidden;
+    }
+}
+
+
+/* CSS rules for screens with a minimum width of 1201 pixels */
+
+@media (min-width: 1201px) {
+    /* CSS rules for screens starting from 1201 pixels wide */
+    .productList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+        padding: 100px 10px;
+        overflow: hidden;
+    }
+}

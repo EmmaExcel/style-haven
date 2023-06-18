@@ -33,6 +33,7 @@ const StoreListContainer = styled.div`
   justify-content: center;
   width: 90%;
   height: 100%;
+
 `;
 const StoreList = styled.div`
   border-top: 2px solid white;

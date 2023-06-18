@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
 import styles from "@/styles/shop.module.css";
-import Image from "next/image";
+
 import Link from "next/link";
 import { useRecoilState } from "recoil";
 import { cartState } from "@/atoms/cartState";
@@ -9,7 +9,7 @@ import { cartState } from "@/atoms/cartState";
 function ProductItem(props) {
   const [cartItem, setCartItem] = useRecoilState(cartState);
   const [changeAddtoCart, setChangeAddToCart] = useState(true);
-  
+
   const addItemToCart = () => {
     if (cartItem.findIndex((pro) => pro.id === props.product.id) === -1) {
       setCartItem((prevState) => [...prevState, props.product]);
@@ -21,47 +21,73 @@ function ProductItem(props) {
       setCartItem((prevState) => {
         return prevState.filter((item) => item.id !== props.product.id);
       });
-    
+
       setChangeAddToCart(true);
     }
   };
 
-
-
   return (
-    <div className={`product ${props.product?.size} ${props.product?.style}`}>
-      {props.product.text && (
-        <div className="productText">
-          <p>{props.product.text}</p>
-        </div>
-      )}
-
-      {props.product?.image && (
-        <Link
-          href={"/" + props.product.id}
-          className={`productImageContainer ${props.product?.size} ${props.product?.style}`}
-        >
-          <img
-            className={`productImage ${props.product?.size} ${props.product?.style}`}
-            src={props.product?.image}
-          />
-        </Link>
-      )}
-
-      <div className={`productNameContainer `}>
-        <p>{props.product?.name}</p>
-        {props.product?.price && (
-          <div className="productPriceContainer">
-            <p>Price: ${props.product?.price}</p>
-            {changeAddtoCart == true ? (
-              <button onClick={addItemToCart}>Add to cart</button>
-            ) : (
-              <button onClick={addItemToCart}>Remove</button>
-            )}
+    <>
+      <div  className={ `product ${props.product?.size} ${props.product?.style}`}>
+        {props.product.text && (
+          <div className="productText">
+            <p>{props.product.text}</p>
           </div>
         )}
+
+        {props.product?.image && (
+          <Link
+            href={"/" + props.product.id}
+            className={`productImageContainer ${props.product?.size} ${props.product?.style}`}
+          >
+            <img
+              className={`productImage ${props.product?.size} ${props.product?.style}`}
+              src={props.product?.image}
+            />
+          </Link>
+        )}
+
+        <div className={`productNameContainer `}>
+          <p>{props.product?.name}</p>
+          {props.product?.price && (
+            <div className="productPriceContainer">
+              <p>${props.product?.price}</p>
+              {changeAddtoCart == true ? (
+                <button onClick={addItemToCart}>Add to cart</button>
+              ) : (
+                <button onClick={addItemToCart}>Remove</button>
+              )}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+
+      <div className={`productMobile`}>
+        {props.product?.image && (
+          <Link
+            href={"/" + props.product.id}
+            className={`productImageContainerMobile `}
+          >
+            <img className={`productImageMobile`} src={props.product?.image} />
+            
+          </Link>
+        )}
+
+        <div className={`productInfoContainerMobile `}>
+        <p>{props.product?.name}</p>
+          {props.product?.price && (
+            <div className="productPriceContainerMobile">
+              <p> ${props.product?.price}</p>
+              {changeAddtoCart == true ? (
+                <button onClick={addItemToCart}>Add to cart</button>
+              ) : (
+                <button onClick={addItemToCart}>Remove</button>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </>
   );
 }
 
