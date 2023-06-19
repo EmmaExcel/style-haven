@@ -4,18 +4,6 @@ import Image from "next/image";
 // import React, { useEffect, useState } from 'react';
 
 const About = () => {
-  /* const [scrollY, setScrollY] = useState(0); */
- /*  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); */
 
 
   return (
@@ -55,7 +43,7 @@ const About = () => {
               </p>
             </div>
             <div className={ styled.aboutInfoImage }>
-              <Image src="/about1.png" width={305} height={456} />
+              <img src="/about1.png"/>
             </div>
           </div>
 
@@ -80,8 +68,12 @@ const About = () => {
             </div>
 
             <div className={ styled.aboutInfoTwoImg }>
-              {/* <p>STYLED HAVEN</p> */}
-              <Image src="/about2.png" alt="" width={370} height={556} />
+              <div className={styled.aboutInfoTwoImgText}>
+                <span />
+                <p>STYLE HAVEN</p>
+                <span/>
+              </div>
+              <img src="/about2.png" alt="" />
             </div>
           </div>
         </div>
