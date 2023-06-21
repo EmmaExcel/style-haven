@@ -331,7 +331,7 @@
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 600;
-        font-size: 50px;
+        font-size: 45px;
         line-height: 68px;
         color: #FFFFFF;
         border-bottom: 1px solid #fff;
@@ -514,8 +514,8 @@
     }
     .aboutInfoTwoImg {
         position: relative;
-        width: 331px;
-        height: 516px;
+        width: 280px;
+        height: 486px;
         left: unset;
         top: unset;
         animation: 1s animate;
@@ -524,12 +524,12 @@
         animation-delay: 1s;
         display: flex;
         align-items: unset;
-        justify-content: unset;
+        justify-content: center;
     }
     .aboutInfoTwoImgText {
         position: absolute;
         top: 46%;
-        left: -89%;
+        left: -106%;
         transform: rotate(90deg);
         display: flex;
         align-items: center;
@@ -546,7 +546,7 @@
     }
     .aboutInfoTwoImgText span {
         height: 1px;
-        width: 120px;
+        width: 80px;
         background-color: rgba(255, 255, 255, 0.697);
     }
     .aboutInfoImage img {
@@ -558,7 +558,7 @@
         font-family: 'Aref Ruqaa';
         font-style: normal;
         font-weight: 700;
-        font-size: 23px;
+        font-size: 20px;
         line-height: 47px;
         /* identical to box height */
         color: #A3A3A3;
