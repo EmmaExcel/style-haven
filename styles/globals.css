@@ -264,8 +264,9 @@
     .navLinkMobile {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        position: absolute;
+        width: 100%;
+        height: 100%;
+        position: fixed;
         top: 100px;
         z-index: 10000000000;
         transform: translateY(-500px);
@@ -294,11 +295,35 @@
     .navLinkMobile a {
         border-bottom: 1px solid white;
         text-decoration: none;
-        height: 40px;
+        height: 100px;
         text-align: center;
         display: flex;
         align-items: center;
         padding-left: 20px;
+    }
+    .navLinkMobile a:last-child {
+        border-bottom: none;
+    }
+    .navLinkP {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: white;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+    }
+    .navExtraP:hover {
+        transition: 0.7s;
+        color: rgba(255, 255, 255, 0.575);
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
     }
     .sm {
         width: 264px;
