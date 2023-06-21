@@ -514,8 +514,8 @@
     }
     .aboutInfoTwoImg {
         position: relative;
-        width: 371px;
-        height: 556px;
+        width: 331px;
+        height: 516px;
         left: unset;
         top: unset;
         animation: 1s animate;
@@ -529,7 +529,7 @@
     .aboutInfoTwoImgText {
         position: absolute;
         top: 46%;
-        left: -83%;
+        left: -89%;
         transform: rotate(90deg);
         display: flex;
         align-items: center;
@@ -550,15 +550,15 @@
         background-color: rgba(255, 255, 255, 0.697);
     }
     .aboutInfoImage img {
-        width: 328px;
-        height: 556px;
+        width: 288px;
+        height: 526px;
     }
     .aboutInfoTwoImg p {
         width: 217px;
         font-family: 'Aref Ruqaa';
         font-style: normal;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 23px;
         line-height: 47px;
         /* identical to box height */
         color: #A3A3A3;
