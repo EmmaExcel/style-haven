@@ -13,6 +13,7 @@ const DiorHero = () => {
               <h1>DIOR</h1>
             </div>
             <div className={styles.DiorHeadTwo}>
+            <p>Sponsored</p>
               <h1>DIOR</h1>
             </div>
           </div>

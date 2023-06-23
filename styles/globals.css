@@ -553,9 +553,10 @@
     .navLinkMobile {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        position: absolute;
-        top: 100px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 80px;
         z-index: 10000000000;
         transform: translateY(-500px);
         -webkit-transform: translateY(-500px);
@@ -583,11 +584,36 @@
     .navLinkMobile a {
         border-bottom: 1px solid white;
         text-decoration: none;
-        height: 40px;
+        height: 100px;
         text-align: center;
         display: flex;
         align-items: center;
         padding-left: 20px;
+    }
+    .navLinkMobile a:last-child {
+        border-bottom: none;
+    }
+    .navLinkP {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: white;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+        background-color: rgb(4, 4, 4);
+    }
+    .navExtraP:hover {
+        transition: 0.7s;
+        background-color: rgba(255, 255, 255, 0.575);
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
     }
     .sm {
         width: 264px;
@@ -604,8 +630,8 @@
         justify-content: center;
     }
     .featureProductImage .sm {
-        width: 264px;
-        height: 325px;
+        width: 274px;
+        height: 345px;
     }
     .featureProductImage {
         width: 100%;
@@ -837,6 +863,77 @@
 
 @media (min-width: 1201px) {
     /* CSS rules for screens starting from 1201 pixels wide */
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px 50px 100px;
+        position: relative;
+    }
+    .navLogo {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        letter-spacing: -0.04em;
+        color: #ffffff;
+        display: flex;
+        width: 180px;
+    }
+    .navLogo a {
+        text-decoration: none;
+    }
+    .navLink {
+        display: flex;
+        gap: 50px;
+    }
+    .navLink a {
+        text-decoration: none;
+    }
+    .navLinkP {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: white;
+    }
+    .navExtra {
+        display: flex;
+        gap: 20px;
+    }
+    .navExtraP {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .navExtraP span {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        font-size: 13px;
+        background-color: rgba(255, 255, 255, 0.847);
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: black;
+    }
+    /* Add the styles for the BsHandbag icon if necessary */
+    #handbag {
+        color: white;
+        font-size: x-large;
+    }
     .navLogoMobile {
         display: none;
     }
@@ -847,6 +944,79 @@
         display: flex;
     }
     .productMobile {
+        display: none;
+    }
+    .sm {
+        width: 264px;
+        height: 425px;
+    }
+    .bg {
+        width: 374px;
+        height: 100%;
+    }
+    .featureProductContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .featureProductName {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #FFFFFF;
+        padding: 10px 0;
+    }
+    .featureProductImage .sm {
+        width: 264px;
+        height: 325px;
+    }
+    .featureProductImage {
+        width: 100%;
+        height: 100%;
+    }
+    .featureProductPriceContainer {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+    .featureProductPriceContainer p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+    .featureProductPriceContainer button {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+    .featureProductText {
+        width: 364px;
+        height: 324px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 108px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .mobileViewAll {
         display: none;
     }
     .bigImg {
